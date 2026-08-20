@@ -40,8 +40,16 @@ export interface Collection {
 }
 
 export interface Money {
+  /**
+   * Canonical stored amount. This must always be an integer; floating-point
+   * monetary values are forbidden.
+   */
   amount: number;
-  currencyCode: "IRR";
+  /**
+   * Backend-neutral identifier for the canonical monetary storage unit.
+   * Its format and value will be finalized during real catalog analysis/import.
+   */
+  unit: string;
 }
 
 export interface Product {

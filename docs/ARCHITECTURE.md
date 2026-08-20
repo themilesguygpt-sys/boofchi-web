@@ -36,6 +36,10 @@ Product Type (`Category`) and fandom identity (`Universe`, `Fandom`, and `Charac
 
 For the demo, a small in-memory adapter may later implement `CatalogDataSource`. In production, a Medusa REST adapter can implement the same boundary without requiring UI rewrites.
 
+## Money policy (deferred)
+
+`Money.amount` is always an integer canonical stored value. Floating-point monetary values are forbidden. The canonical currency and storage unit (for example, rial, toman, or another explicit representation) will be finalized during the real Boofchi catalog analysis/import phase after the existing storefront's price data is inspected. UI display formatting remains separate from canonical stored values.
+
 ## Rendering and delivery
 
 - Prefer Server Components, server rendering, streaming, and framework caching.
