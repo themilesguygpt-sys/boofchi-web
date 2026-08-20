@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 
+import { SiteFooter } from "@/components/layout/site-footer";
+import { SiteHeader } from "@/components/layout/site-header";
 import { getSiteUrl } from "@/lib/site";
 
 import "./globals.css";
@@ -10,10 +12,11 @@ const siteUrl = getSiteUrl();
 export const metadata: Metadata = {
   metadataBase: siteUrl,
   title: {
-    default: "Boofchi | زیرساخت فروشگاه",
+    default: "بوفچی | کانسپت استور فرهنگ پاپ",
     template: "%s | Boofchi",
   },
-  description: "زیرساخت فنی فروشگاه فارسی Boofchi برای تجربه‌ای سریع، مدرن و دسترس‌پذیر.",
+  description:
+    "فروشگاه بوفچی برای کشف اکسسوری، دکور، فیگور و اشیای کلکسیونی از دنیای بازی، انیمه و فرهنگ پاپ.",
   alternates: {
     canonical: "/",
   },
@@ -22,8 +25,16 @@ export const metadata: Metadata = {
     locale: "fa_IR",
     url: "/",
     siteName: "Boofchi",
-    title: "Boofchi | زیرساخت فروشگاه",
-    description: "زیرساخت فنی فروشگاه فارسی Boofchi.",
+    title: "بوفچی | چیزهایی که فقط وسیله نیستن",
+    description: "اکسسوری، دکور، فیگور و اشیای کلکسیونی برای آدم‌های فندوم‌دار.",
+    images: [
+      {
+        url: "/media/brand/store/boofchi-store-1.webp",
+        width: 1600,
+        height: 900,
+        alt: "فضای فروشگاه بوفچی",
+      },
+    ],
   },
 };
 
@@ -37,7 +48,14 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="fa" dir="rtl">
-      <body>{children}</body>
+      <body>
+        <a className="skip-link" href="#main-content">
+          رفتن به محتوای اصلی
+        </a>
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+      </body>
     </html>
   );
 }
