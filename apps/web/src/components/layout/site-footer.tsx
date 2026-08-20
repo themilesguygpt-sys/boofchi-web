@@ -19,7 +19,7 @@ export function SiteFooter() {
                 sizes="150px"
               />
             </span>
-            <p>اشیای کلکسیونی، فندوم و چیزهایی که شخصیت دارن.</p>
+            <p>فیگور، دکور و چیزایی از دنیای موردعلاقه‌ت.</p>
           </div>
           <p className="site-footer__statement">
             <BidiText dir="ltr">Stay uncommon.</BidiText>
@@ -40,7 +40,7 @@ export function SiteFooter() {
           <section aria-labelledby="footer-about">
             <h2 id="footer-about">بوفچی</h2>
             <Link href="/#story">فضای بوفچی</Link>
-            <Link href="/#collector">هویت کلکتوری</Link>
+            <Link href="/#collector">کالکشن تو</Link>
           </section>
           <section aria-labelledby="footer-next">
             <h2 id="footer-next">در راه</h2>

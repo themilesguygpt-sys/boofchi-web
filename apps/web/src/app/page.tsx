@@ -20,15 +20,15 @@ export default async function Home() {
           <div className="hero__copy">
             <p className="hero__kicker">
               <span dir="ltr">BOOFCHI / 2026</span>
-              <span>کانسپت استور فرهنگ پاپ</span>
+              <span>فروشگاه فرهنگ پاپ</span>
             </p>
             <h1 id="hero-title">
               چیزایی که فقط
               <span>«وسیله» نیستن.</span>
             </h1>
             <p className="hero__description">
-              از فیگور و دکور تا اکسسوری‌های فندوم‌دار؛ هر چیزی اینجاست تا یه تکه از
-              دنیای موردعلاقه‌ت رو بیاره توی زندگی واقعی.
+              از فیگور و دکور تا اکسسوری؛ یه تیکه از دنیای موردعلاقه‌ت رو بیار توی
+              اتاقت.
             </p>
             <div className="hero__actions">
               <a className="button button--primary" href="#catalog">
@@ -41,11 +41,11 @@ export default async function Home() {
             </div>
             <div className="hero__footnote">
               <span className="status-dot" />
-              <span>کالکشن واقعی بوفچی، آماده‌ی کشف</span>
+              <span>کالکشن بوفچی، آماده‌ی دیدنه</span>
             </div>
           </div>
 
-          <div className="hero-composition" aria-label="منتخبی از محصولات واقعی بوفچی">
+          <div className="hero-composition" aria-label="منتخبی از محصولات بوفچی">
             <span className="hero-composition__word" dir="ltr">UNCOMMON</span>
             <span className="hero-composition__grid" aria-hidden="true" />
             {catalog.heroProducts.map((product, index) => {
@@ -84,14 +84,14 @@ export default async function Home() {
           <h2 className="sr-only" id="discovery-title">راه‌های کشف محصولات بوفچی</h2>
           <div className="discovery-shortcuts">
             <a href="#categories" className="discovery-shortcut discovery-shortcut--violet">
-              <span className="discovery-shortcut__label">از جنسِ چیزی که می‌خوای</span>
+              <span className="discovery-shortcut__label">فیگور، دکور، اکسسوری</span>
               <strong>چی می‌خوای؟</strong>
-              <span className="discovery-shortcut__action">دسته‌بندی محصولات <ArrowIcon /></span>
+              <span className="discovery-shortcut__action">دسته‌بندی‌ها رو ببین <ArrowIcon /></span>
             </a>
             <a href="#universes" className="discovery-shortcut discovery-shortcut--dark">
-              <span className="discovery-shortcut__label">از دل داستان موردعلاقه‌ت</span>
+              <span className="discovery-shortcut__label">از قصه‌ی موردعلاقه‌ت</span>
               <strong>دنیات کدومه؟</strong>
-              <span className="discovery-shortcut__action">کشف فندوم‌ها <ArrowIcon /></span>
+              <span className="discovery-shortcut__action">دنیاها رو ببین <ArrowIcon /></span>
             </a>
           </div>
         </Container>
@@ -104,7 +104,7 @@ export default async function Home() {
             index="01"
             eyebrow="منتخب این ویترین"
             title="انتخاب‌های بوفچی"
-            description="یه شروع سریع از بین اشیایی که هرکدوم حال‌وهوای خودشون رو دارن."
+            description="اگه نمی‌دونی از کجا شروع کنی، اینا رو ببین."
           />
           <ProductRail products={catalog.featuredProducts} universes={universes} label="محصولات منتخب بوفچی" />
           <p className="rail-hint">برای دیدن بقیه، به طرفین حرکت کن</p>
@@ -118,7 +118,7 @@ export default async function Home() {
             index="02"
             eyebrow="از قصه وارد شو"
             title="دنیای موردعلاقه‌ت کجاست؟"
-            description="هشت دنیا از قصه‌ها و بازی‌هایی که دوستشون داری؛ از اینجا مسیر خودتو پیدا کن."
+            description="هشت دنیا از قصه‌ها و بازی‌هایی که دوستشون داری؛ ببین مال تو کدومه."
           />
           <div className="universe-grid">
             {catalog.universes.map(({ universe, product }, index) => (
@@ -133,9 +133,9 @@ export default async function Home() {
           <SectionHeading
             id="categories-title"
             index="03"
-            eyebrow="از خودِ شیء وارد شو"
+            eyebrow="از چیزی که می‌خوای شروع کن"
             title="چی می‌خوای با خودت ببری؟"
-            description="چند مسیر جمع‌وجور از دسته‌بندی واقعی محصولات بوفچی؛ برای پیدا کردن چیزی که به فضای تو میاد."
+            description="فیگور، دکور، اکسسوری و کلی چیز دیگه؛ برو سراغ چیزی که دنبالش بودی."
           />
           <div className="category-grid">
             {catalog.categories.map(({ category, product }, index) => (
@@ -160,11 +160,11 @@ export default async function Home() {
             <p className="eyebrow">نه فقط یک ویترین آنلاین</p>
             <h2 id="story-title">از بتن و نور قرمز، تا صفحه‌ی موبایل تو.</h2>
             <p>
-              بوفچی یه فضای واقعی برای پیدا کردن اشیای شخصیت‌داره؛ این تجربه‌ی دیجیتال هم
-              قراره همون حس کشف کردن بین قفسه‌ها رو ادامه بده.
+              بوفچی یه فروشگاه واقعیه، پر از چیزایی که سلیقه‌ت رو نشون می‌دن.
+              اینجا هم همون حس کشف کردن بین قفسه‌ها ادامه داره.
             </p>
-            <div className="story-section__tags" aria-label="ویژگی‌های هویت بوفچی">
-              <span>اشیای کلکسیونی</span><span>فرهنگ پاپ</span><span>هویت مستقل</span>
+            <div className="story-section__tags" aria-label="حال‌وهوای بوفچی">
+              <span>اشیای کلکسیونی</span><span>فرهنگ پاپ</span><span>سلیقه‌ی خودت</span>
             </div>
           </div>
         </Container>
@@ -175,9 +175,9 @@ export default async function Home() {
           <SectionHeading
             id="more-title"
             index="04"
-            eyebrow="یه کم دورتر از انتخاب‌های واضح"
-            title="چیزهای جالب این دور"
-            description="از فیگور و سردیس تا دکورهای خاص؛ چند انتخاب برای وقتی که دنبال چیز قابل‌پیش‌بینی نیستی."
+            eyebrow="چند انتخاب دیگه"
+            title="اینا رو هم ببین."
+            description="از فیگور و سردیس تا دکور؛ شاید چیزی که می‌خوای همین‌جا باشه."
           />
           <ProductRail products={catalog.discoveryProducts} universes={universes} label="کشف‌های بیشتر از بوفچی" />
         </Container>
@@ -193,10 +193,10 @@ export default async function Home() {
           </div>
           <div className="collector-section__copy">
             <span className="badge badge--sale">به‌زودی</span>
-            <h2 id="collector-title">کالکشن تو، بخشی از هویت توئه.</h2>
+            <h2 id="collector-title">کالکشن تو، داستان خودشو داره.</h2>
             <p>
-              به‌زودی می‌تونی لیست علاقه‌مندی و کالکشن‌هات رو بسازی و پروفایل فندومی
-              خودت رو شکل بدی.
+              به‌زودی می‌تونی علاقه‌مندی‌هات رو ذخیره کنی، کالکشن بسازی و پروفایل فندومی
+              خودتو داشته باشی.
             </p>
             <span className="collector-section__signature" dir="ltr">COLLECT / EXPRESS / REPEAT</span>
           </div>

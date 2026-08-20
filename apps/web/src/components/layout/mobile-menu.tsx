@@ -10,7 +10,7 @@ const links = [
   { href: "/#catalog", label: "منتخب بوفچی" },
   { href: "/#universes", label: "دنیاها" },
   { href: "/#categories", label: "دسته‌بندی‌ها" },
-  { href: "/#story", label: "قصه‌ی بوفچی" },
+  { href: "/#story", label: "خودِ بوفچی" },
 ] as const;
 
 const focusableSelector = [
