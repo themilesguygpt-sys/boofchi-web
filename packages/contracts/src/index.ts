@@ -9,6 +9,9 @@ export type {
   Money,
   PageResult,
   Product,
+  ProductAvailability,
+  ProductImage,
   ProductQuery,
+  MoneyUnit,
   Universe,
 } from "./catalog";

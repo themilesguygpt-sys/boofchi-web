@@ -1,0 +1,376 @@
+[
+  {
+    "id": "category-354",
+    "slug": "key-capدکمه-کیبورد",
+    "name": {
+      "fa": "key cap(دکمه کیبورد)"
+    },
+    "parentId": "category-255"
+  },
+  {
+    "id": "category-301",
+    "slug": "آویز-ماشین",
+    "name": {
+      "fa": "آویز ماشین"
+    },
+    "parentId": "category-265"
+  },
+  {
+    "id": "category-259",
+    "slug": "miror",
+    "name": {
+      "fa": "آیینه"
+    },
+    "parentId": "category-257"
+  },
+  {
+    "id": "category-274",
+    "slug": "paint-miror",
+    "name": {
+      "fa": "آیینه Paint"
+    },
+    "parentId": "category-259"
+  },
+  {
+    "id": "category-307",
+    "slug": "آیینه-wanted",
+    "name": {
+      "fa": "آیینه Wanted"
+    },
+    "parentId": "category-259"
+  },
+  {
+    "id": "category-273",
+    "slug": "knife-miror",
+    "name": {
+      "fa": "آیینه چاقویی"
+    },
+    "parentId": "category-259"
+  },
+  {
+    "id": "category-275",
+    "slug": "convex-miror",
+    "name": {
+      "fa": "آیینه محدب"
+    },
+    "parentId": "category-259"
+  },
+  {
+    "id": "category-265",
+    "slug": "accesory",
+    "name": {
+      "fa": "اکسسوری"
+    },
+    "parentId": "category-255"
+  },
+  {
+    "id": "category-256",
+    "slug": "فیگور",
+    "name": {
+      "fa": "اکشن فیگور"
+    },
+    "parentId": "category-255"
+  },
+  {
+    "id": "category-268",
+    "slug": "emgbox",
+    "name": {
+      "fa": "امرجنسی باکس"
+    },
+    "parentId": "category-267"
+  },
+  {
+    "id": "category-287",
+    "slug": "ring",
+    "name": {
+      "fa": "انگشتر"
+    },
+    "parentId": "category-265"
+  },
+  {
+    "id": "category-282",
+    "slug": "body-bag",
+    "name": {
+      "fa": "بادی بگ"
+    },
+    "parentId": "category-264"
+  },
+  {
+    "id": "category-260",
+    "slug": "boxkomod",
+    "name": {
+      "fa": "باکس و کمد"
+    },
+    "parentId": "category-257"
+  },
+  {
+    "id": "category-306",
+    "slug": "بکدراپ-و-پرچم",
+    "name": {
+      "fa": "بکدراپ و پرچم"
+    },
+    "parentId": "category-257"
+  },
+  {
+    "id": "category-353",
+    "slug": "پاف-و-سطل",
+    "name": {
+      "fa": "پاف و سطل"
+    },
+    "parentId": "category-257"
+  },
+  {
+    "id": "category-262",
+    "slug": "poster",
+    "name": {
+      "fa": "پوستر"
+    },
+    "parentId": "category-257"
+  },
+  {
+    "id": "category-277",
+    "slug": "wall-poster",
+    "name": {
+      "fa": "پوستر دیواری"
+    },
+    "parentId": "category-262"
+  },
+  {
+    "id": "category-263",
+    "slug": "clothes",
+    "name": {
+      "fa": "پوشیدنی"
+    },
+    "parentId": "category-255"
+  },
+  {
+    "id": "category-267",
+    "slug": "tablo",
+    "name": {
+      "fa": "تابلو"
+    },
+    "parentId": "category-257"
+  },
+  {
+    "id": "category-269",
+    "slug": "tablo-4070",
+    "name": {
+      "fa": "تابلو ۴۰*۷۰"
+    },
+    "parentId": "category-267"
+  },
+  {
+    "id": "category-272",
+    "slug": "felezi-tablo",
+    "name": {
+      "fa": "تابلو فلزی"
+    },
+    "parentId": "category-267"
+  },
+  {
+    "id": "category-270",
+    "slug": "lego-tablo",
+    "name": {
+      "fa": "تابلو لگو"
+    },
+    "parentId": "category-267"
+  },
+  {
+    "id": "category-271",
+    "slug": "hw-tablo",
+    "name": {
+      "fa": "تابلو هات ویلز"
+    },
+    "parentId": "category-267"
+  },
+  {
+    "id": "category-266",
+    "slug": "جالبی-جات",
+    "name": {
+      "fa": "جالبی جات"
+    }
+  },
+  {
+    "id": "category-281",
+    "slug": "socks",
+    "name": {
+      "fa": "جوراب"
+    },
+    "parentId": "category-263"
+  },
+  {
+    "id": "category-255",
+    "slug": "محصولات",
+    "name": {
+      "fa": "چی داریم؟"
+    }
+  },
+  {
+    "id": "category-284",
+    "slug": "bracelet",
+    "name": {
+      "fa": "دستبند"
+    },
+    "parentId": "category-265"
+  },
+  {
+    "id": "category-257",
+    "slug": "decorative",
+    "name": {
+      "fa": "دکوراتیو"
+    },
+    "parentId": "category-255"
+  },
+  {
+    "id": "category-351",
+    "slug": "دیوارکوب-و-سردیس",
+    "name": {
+      "fa": "دیوارکوب و سردیس"
+    },
+    "parentId": "category-257"
+  },
+  {
+    "id": "category-288",
+    "slug": "pants-chain",
+    "name": {
+      "fa": "زنجیر شلواری"
+    },
+    "parentId": "category-265"
+  },
+  {
+    "id": "category-291",
+    "slug": "the-key",
+    "name": {
+      "fa": "سرکلیدی"
+    },
+    "parentId": "category-255"
+  },
+  {
+    "id": "category-349",
+    "slug": "شانسی-و-میستری-باکس",
+    "name": {
+      "fa": "شانسی و میستری باکس"
+    },
+    "parentId": "category-255"
+  },
+  {
+    "id": "category-286",
+    "slug": "glasses",
+    "name": {
+      "fa": "عینک"
+    },
+    "parentId": "category-265"
+  },
+  {
+    "id": "category-258",
+    "slug": "poster-carpet",
+    "name": {
+      "fa": "فرش پوستری"
+    },
+    "parentId": "category-257"
+  },
+  {
+    "id": "category-289",
+    "slug": "lighter",
+    "name": {
+      "fa": "فندک"
+    },
+    "parentId": "category-265"
+  },
+  {
+    "id": "category-352",
+    "slug": "فوم-برد",
+    "name": {
+      "fa": "فوم برد"
+    },
+    "parentId": "category-267"
+  },
+  {
+    "id": "category-280",
+    "slug": "hat",
+    "name": {
+      "fa": "کلاه"
+    },
+    "parentId": "category-263"
+  },
+  {
+    "id": "category-309",
+    "slug": "کمربند",
+    "name": {
+      "fa": "کمربند"
+    },
+    "parentId": "category-263"
+  },
+  {
+    "id": "category-264",
+    "slug": "bag",
+    "name": {
+      "fa": "کیف"
+    },
+    "parentId": "category-255"
+  },
+  {
+    "id": "category-283",
+    "slug": "wallet",
+    "name": {
+      "fa": "کیف پول"
+    },
+    "parentId": "category-264"
+  },
+  {
+    "id": "category-285",
+    "slug": "necklace",
+    "name": {
+      "fa": "گردنبد"
+    },
+    "parentId": "category-265"
+  },
+  {
+    "id": "category-308",
+    "slug": "گوشواره",
+    "name": {
+      "fa": "گوشواره"
+    },
+    "parentId": "category-265"
+  },
+  {
+    "id": "category-261",
+    "slug": "light-box",
+    "name": {
+      "fa": "لایت باکس و چراغ خواب"
+    },
+    "parentId": "category-257"
+  },
+  {
+    "id": "category-348",
+    "slug": "ماگ",
+    "name": {
+      "fa": "ماگ"
+    },
+    "parentId": "category-255"
+  },
+  {
+    "id": "category-276",
+    "slug": "wall-manga",
+    "name": {
+      "fa": "مانگا دیواری"
+    },
+    "parentId": "category-262"
+  },
+  {
+    "id": "category-303",
+    "slug": "مپ-کانتر",
+    "name": {
+      "fa": "مپ کانتر"
+    },
+    "parentId": "category-257"
+  },
+  {
+    "id": "category-292",
+    "slug": "hot-wheels",
+    "name": {
+      "fa": "هات ویلز"
+    },
+    "parentId": "category-255"
+  }
+]

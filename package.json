@@ -8,16 +8,21 @@
   },
   "scripts": {
     "build": "turbo run build",
+    "catalog:audit": "node scripts/audit-boofchi-source.mjs",
+    "catalog:import": "node scripts/import-boofchi-demo.mjs",
+    "catalog:validate": "node scripts/validate-demo-catalog.mjs",
     "dev": "turbo run dev",
-    "lint": "turbo run lint",
+    "lint": "turbo run lint && eslint scripts",
     "type-check": "turbo run type-check",
-    "validate": "pnpm lint && pnpm type-check && pnpm build"
+    "validate": "pnpm catalog:validate && pnpm lint && pnpm type-check && pnpm build"
   },
   "devDependencies": {
     "@eslint/js": "9.39.5",
     "@types/node": "24.13.3",
     "eslint": "9.39.5",
     "eslint-config-next": "16.3.1",
+    "html-to-text": "10.0.1",
+    "sharp": "0.35.3",
     "turbo": "2.10.11",
     "typescript": "6.0.3",
     "typescript-eslint": "8.67.0"

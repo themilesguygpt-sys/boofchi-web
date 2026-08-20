@@ -12,6 +12,10 @@ export interface Category {
   parentId?: EntityId;
 }
 
+export type MoneyUnit = "TOMAN";
+
+export type ProductAvailability = "in-stock" | "out-of-stock" | "unknown";
+
 export interface Universe {
   id: EntityId;
   slug: string;
@@ -45,24 +49,36 @@ export interface Money {
    * monetary values are forbidden.
    */
   amount: number;
-  /**
-   * Backend-neutral identifier for the canonical monetary storage unit.
-   * Its format and value will be finalized during real catalog analysis/import.
-   */
-  unit: string;
+  unit: MoneyUnit;
+}
+
+export interface ProductImage {
+  id: EntityId;
+  path: string;
+  alt: string;
+  width: number;
+  height: number;
+  primary: boolean;
 }
 
 export interface Product {
   id: EntityId;
   slug: string;
   title: LocalizedText;
+  shortDescription?: string;
+  description?: string;
   categoryId: EntityId;
   universeId?: EntityId;
   fandomIds: readonly EntityId[];
   characterIds: readonly EntityId[];
   collectionIds: readonly EntityId[];
-  price?: Money;
+  price: Money;
+  regularPrice?: Money;
+  salePrice?: Money;
+  availability: ProductAvailability;
+  images: readonly ProductImage[];
   sku?: string;
+  sourceUrl: string;
 }
 
 export interface ProductQuery {
@@ -89,4 +105,7 @@ export interface CatalogDataSource {
   listProducts(query?: ProductQuery): Promise<PageResult<Product>>;
   listCategories(): Promise<readonly Category[]>;
   listUniverses(): Promise<readonly Universe[]>;
+  listFandoms(): Promise<readonly Fandom[]>;
+  listCharacters(): Promise<readonly Character[]>;
+  listCollections(): Promise<readonly Collection[]>;
 }

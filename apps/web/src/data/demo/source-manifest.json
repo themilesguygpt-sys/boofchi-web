@@ -1,0 +1,1678 @@
+{
+  "schemaVersion": 1,
+  "sourceWebsite": "https://boofchi.ir",
+  "importedAt": "2026-08-20T17:52:30.305Z",
+  "endpoints": {
+    "products": "https://boofchi.ir/wp-json/wc/store/v1/products",
+    "categories": "https://boofchi.ir/wp-json/wc/store/v1/products/categories",
+    "wordpress": "https://boofchi.ir/wp-json/",
+    "sitemap": "https://boofchi.ir/sitemap_index.xml"
+  },
+  "sourceCounts": {
+    "products": 966,
+    "categories": 47
+  },
+  "products": [
+    {
+      "id": "product-5074",
+      "sourceId": 5074,
+      "sourceSlug": "%d8%b3%d8%b1%da%a9%d9%84%db%8c%d8%af%db%8c-gta-2",
+      "sourceUrl": "https://boofchi.ir/product/%d8%b3%d8%b1%da%a9%d9%84%db%8c%d8%af%db%8c-gta-2/",
+      "sourceCategoryIds": [
+        255,
+        291
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/srakilidi-gta-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-5235",
+      "sourceId": 5235,
+      "sourceSlug": "%da%af%d8%b1%d8%af%d9%86%d8%a8%d9%86%d8%af-the-last-of-us",
+      "sourceUrl": "https://boofchi.ir/product/%da%af%d8%b1%d8%af%d9%86%d8%a8%d9%86%d8%af-the-last-of-us/",
+      "sourceCategoryIds": [
+        255,
+        265,
+        285
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/08/aviz1--scaled.jpg",
+        "https://boofchi.ir/wp-content/uploads/2025/08/aviz1-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-3337",
+      "sourceId": 3337,
+      "sourceSlug": "%d8%b3%d8%b1%da%a9%d9%84%db%8c%d8%af%db%8c-11",
+      "sourceUrl": "https://boofchi.ir/product/%d8%b3%d8%b1%da%a9%d9%84%db%8c%d8%af%db%8c-11/",
+      "sourceCategoryIds": [
+        255,
+        291
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/sarkilidi-109-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-5065",
+      "sourceId": 5065,
+      "sourceSlug": "%d8%b3%d8%b1%da%a9%d9%84%db%8c%d8%af%db%8c-berserk-2",
+      "sourceUrl": "https://boofchi.ir/product/%d8%b3%d8%b1%da%a9%d9%84%db%8c%d8%af%db%8c-berserk-2/",
+      "sourceCategoryIds": [
+        255,
+        291
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/sarkilidi-berserk1-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8907",
+      "sourceId": 8907,
+      "sourceSlug": "%d9%85%d8%a7%da%a9%d8%aa-%d8%a7%d8%b3%d9%84%d8%ad%d9%87-%d9%81%d9%84%d8%b2%db%8c08",
+      "sourceUrl": "https://boofchi.ir/product/%d9%85%d8%a7%da%a9%d8%aa-%d8%a7%d8%b3%d9%84%d8%ad%d9%87-%d9%81%d9%84%d8%b2%db%8c08/",
+      "sourceCategoryIds": [
+        255,
+        266,
+        291
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/08/IMG_2370.jpeg"
+      ]
+    },
+    {
+      "id": "product-8905",
+      "sourceId": 8905,
+      "sourceSlug": "%d9%85%d8%a7%da%a9%d8%aa-%d8%a7%d8%b3%d9%84%d8%ad%d9%87-%d9%81%d9%84%d8%b2%db%8c07",
+      "sourceUrl": "https://boofchi.ir/product/%d9%85%d8%a7%da%a9%d8%aa-%d8%a7%d8%b3%d9%84%d8%ad%d9%87-%d9%81%d9%84%d8%b2%db%8c07/",
+      "sourceCategoryIds": [
+        266,
+        255,
+        291
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/08/IMG_2369.jpeg"
+      ]
+    },
+    {
+      "id": "product-8836",
+      "sourceId": 8836,
+      "sourceSlug": "%d8%b4%d9%85%d8%b4%db%8c%d8%b1-berserk",
+      "sourceUrl": "https://boofchi.ir/product/%d8%b4%d9%85%d8%b4%db%8c%d8%b1-berserk/",
+      "sourceCategoryIds": [
+        266,
+        255
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/08/IMG_2358.jpeg"
+      ]
+    },
+    {
+      "id": "product-8758",
+      "sourceId": 8758,
+      "sourceSlug": "%d8%a7%da%a9%d8%b4%d9%86-%d9%81%db%8c%da%af%d9%88%d8%b1-guts-2",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a7%da%a9%d8%b4%d9%86-%d9%81%db%8c%da%af%d9%88%d8%b1-guts-2/",
+      "sourceCategoryIds": [
+        255,
+        256,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/07/AF12041F-843A-4DFC-813F-902A19069870.png.jpeg",
+        "https://boofchi.ir/wp-content/uploads/2026/07/IMG_1781-1-e1784652023401.jpeg"
+      ]
+    },
+    {
+      "id": "product-8873",
+      "sourceId": 8873,
+      "sourceSlug": "%d8%a7%d8%b3%d9%84%d8%ad%d9%87-%d9%81%d9%84%d8%b2%db%8c-01",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a7%d8%b3%d9%84%d8%ad%d9%87-%d9%81%d9%84%d8%b2%db%8c-01/",
+      "sourceCategoryIds": [
+        255,
+        266,
+        257,
+        291
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/08/IMG_2385.jpeg"
+      ]
+    },
+    {
+      "id": "product-4435",
+      "sourceId": 4435,
+      "sourceSlug": "%d9%81%d8%b1%d8%b4-%d9%be%d9%88%d8%b3%d8%aa%d8%b1%db%8c-%d8%b2%d9%85%db%8c%d9%86-%d9%81%d9%88%d8%aa%d8%a8%d8%a7%d9%84",
+      "sourceUrl": "https://boofchi.ir/product/%d9%81%d8%b1%d8%b4-%d9%be%d9%88%d8%b3%d8%aa%d8%b1%db%8c-%d8%b2%d9%85%db%8c%d9%86-%d9%81%d9%88%d8%aa%d8%a8%d8%a7%d9%84/",
+      "sourceCategoryIds": [
+        255,
+        257,
+        258
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/10/8-2-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8263",
+      "sourceId": 8263,
+      "sourceSlug": "%d8%a2%db%8c%db%8c%d9%86%d9%87-%da%af%d8%b1%d8%af",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a2%db%8c%db%8c%d9%86%d9%87-%da%af%d8%b1%d8%af/",
+      "sourceCategoryIds": [
+        255,
+        259,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/02/mirror1-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8543",
+      "sourceId": 8543,
+      "sourceSlug": "%d8%a8%d8%a7%da%a9%d8%b3-%da%86%d9%88%d8%a8%db%8c-%d9%82%d8%b1%d9%85%d8%b2",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a8%d8%a7%da%a9%d8%b3-%da%86%d9%88%d8%a8%db%8c-%d9%82%d8%b1%d9%85%d8%b2/",
+      "sourceCategoryIds": [
+        255,
+        260,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/867175D5-962C-4DBA-9FBD-6EA1E23B6DA8.png.jpeg",
+        "https://boofchi.ir/wp-content/uploads/2026/06/D9C3C984-4C21-4392-90AD-4917CDB7A84B.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-8193",
+      "sourceId": 8193,
+      "sourceSlug": "%d9%84%d8%a7%db%8c%d8%aa-%d8%a8%d8%a7%da%a9%d8%b3",
+      "sourceUrl": "https://boofchi.ir/product/%d9%84%d8%a7%db%8c%d8%aa-%d8%a8%d8%a7%da%a9%d8%b3/",
+      "sourceCategoryIds": [
+        255,
+        257,
+        261
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/02/light-box3-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-3635",
+      "sourceId": 3635,
+      "sourceSlug": "%d8%ac%d9%88%d8%b1%d8%a7%d8%a8-13",
+      "sourceUrl": "https://boofchi.ir/product/%d8%ac%d9%88%d8%b1%d8%a7%d8%a8-13/",
+      "sourceCategoryIds": [
+        263,
+        255
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/jorab-17-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-3982",
+      "sourceId": 3982,
+      "sourceSlug": "%d9%81%d9%86%d8%af%da%a9-%d8%a8%db%8c%da%a9-75",
+      "sourceUrl": "https://boofchi.ir/product/%d9%81%d9%86%d8%af%da%a9-%d8%a8%db%8c%da%a9-75/",
+      "sourceCategoryIds": [
+        265,
+        255
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/f15-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-6713",
+      "sourceId": 6713,
+      "sourceSlug": "%d9%86%d8%b4%d8%a7%d9%86%da%af%d8%b1-%da%a9%d8%aa%d8%a7%d8%a8-%d9%be%d8%b1%d9%88%d8%a7%d9%86%d9%87",
+      "sourceUrl": "https://boofchi.ir/product/%d9%86%d8%b4%d8%a7%d9%86%da%af%d8%b1-%da%a9%d8%aa%d8%a7%d8%a8-%d9%be%d8%b1%d9%88%d8%a7%d9%86%d9%87/",
+      "sourceCategoryIds": [
+        266
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/10/book4-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8459",
+      "sourceId": 8459,
+      "sourceSlug": "%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d8%a8%d9%85%d8%a8-%da%a9%d8%a7%d9%86%d8%aa%d8%b1",
+      "sourceUrl": "https://boofchi.ir/product/%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d8%a8%d9%85%d8%a8-%da%a9%d8%a7%d9%86%d8%aa%d8%b1/",
+      "sourceCategoryIds": [
+        255,
+        267,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/1D08FFCF-F668-4775-B065-BC41D3B4D223.png.jpeg",
+        "https://boofchi.ir/wp-content/uploads/2026/06/FB3DDEB0-2323-4FDC-B59D-3E01A92013A7.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-5229",
+      "sourceId": 5229,
+      "sourceSlug": "%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d8%a7%d9%85%d8%b1%d8%ac%d9%86%d8%b3%db%8c-%d8%a8%d8%a7%da%a9%d8%b3-%d8%b3%db%8c%da%af%d8%a7%d8%b1-%d9%88-%d9%81%d9%86%d8%af%da%a9",
+      "sourceUrl": "https://boofchi.ir/product/%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d8%a7%d9%85%d8%b1%d8%ac%d9%86%d8%b3%db%8c-%d8%a8%d8%a7%da%a9%d8%b3-%d8%b3%db%8c%da%af%d8%a7%d8%b1-%d9%88-%d9%81%d9%86%d8%af%da%a9/",
+      "sourceCategoryIds": [
+        255,
+        268,
+        267,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/08/emg-sigar-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8521",
+      "sourceId": 8521,
+      "sourceSlug": "witcher-4070",
+      "sourceUrl": "https://boofchi.ir/product/witcher-4070/",
+      "sourceCategoryIds": [
+        255,
+        267,
+        269,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/6BB185D7-C711-43BD-A953-6F92342DA2C3.png-1.jpeg"
+      ]
+    },
+    {
+      "id": "product-8259",
+      "sourceId": 8259,
+      "sourceSlug": "%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d9%84%da%af%d9%88-jason-voorhees",
+      "sourceUrl": "https://boofchi.ir/product/%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d9%84%da%af%d9%88-jason-voorhees/",
+      "sourceCategoryIds": [
+        255,
+        267,
+        270
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/02/tbl1-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-3482",
+      "sourceId": 3482,
+      "sourceSlug": "%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d9%87%d8%a7%d8%aa-%d9%88%db%8c%d9%84%d8%b2-dodge-dart",
+      "sourceUrl": "https://boofchi.ir/product/%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d9%87%d8%a7%d8%aa-%d9%88%db%8c%d9%84%d8%b2-dodge-dart/",
+      "sourceCategoryIds": [
+        267,
+        271,
+        255,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/tbl-hw-1-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8602",
+      "sourceId": 8602,
+      "sourceSlug": "%d8%af%d8%b1%d8%a8-%d9%81%d9%84%d8%b2%db%8c",
+      "sourceUrl": "https://boofchi.ir/product/%d8%af%d8%b1%d8%a8-%d9%81%d9%84%d8%b2%db%8c/",
+      "sourceCategoryIds": [
+        266,
+        267,
+        272,
+        255
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/E383555D-3461-4681-92C6-F5CFA135C098.png-Copy.jpeg"
+      ]
+    },
+    {
+      "id": "product-4397",
+      "sourceId": 4397,
+      "sourceSlug": "%d8%a2%db%8c%db%8c%d9%86%d9%87-%da%86%d8%a7%d9%82%d9%88%db%8c%db%8c",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a2%db%8c%db%8c%d9%86%d9%87-%da%86%d8%a7%d9%82%d9%88%db%8c%db%8c/",
+      "sourceCategoryIds": [
+        259,
+        273,
+        255,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/آیینه-چاقویی-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-4745",
+      "sourceId": 4745,
+      "sourceSlug": "%d8%a2%db%8c%db%8c%d9%86%d9%87-captcha",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a2%db%8c%db%8c%d9%86%d9%87-captcha/",
+      "sourceCategoryIds": [
+        259,
+        274,
+        255,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/captcha-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-4436",
+      "sourceId": 4436,
+      "sourceSlug": "%d8%a2%db%8c%db%8c%d9%86%d9%87-%d9%85%d8%ad%d8%af%d8%a8",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a2%db%8c%db%8c%d9%86%d9%87-%d9%85%d8%ad%d8%af%d8%a8/",
+      "sourceCategoryIds": [
+        259,
+        275,
+        255,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/mirror.jpg"
+      ]
+    },
+    {
+      "id": "product-3669",
+      "sourceId": 3669,
+      "sourceSlug": "%d9%85%d8%a7%d9%86%da%af%d8%a7-8",
+      "sourceUrl": "https://boofchi.ir/product/%d9%85%d8%a7%d9%86%da%af%d8%a7-8/",
+      "sourceCategoryIds": [
+        262,
+        255,
+        257,
+        276
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/manga-1-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-6990",
+      "sourceId": 6990,
+      "sourceSlug": "%d9%be%da%a9-%d9%be%d9%88%d8%b3%d8%aa%d8%b1-%db%b2%db%b0-%d8%aa%d8%a7%db%8c%db%8c-spider-man",
+      "sourceUrl": "https://boofchi.ir/product/%d9%be%da%a9-%d9%be%d9%88%d8%b3%d8%aa%d8%b1-%db%b2%db%b0-%d8%aa%d8%a7%db%8c%db%8c-spider-man/",
+      "sourceCategoryIds": [
+        262,
+        277,
+        255,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/11/poster2-scaled.jpg",
+        "https://boofchi.ir/wp-content/uploads/2025/11/poster2--scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8574",
+      "sourceId": 8574,
+      "sourceSlug": "%da%a9%d9%84%d8%a7%d9%87-%da%a9%d8%a7%d8%a8%d9%88%db%8c-%d8%b3%d9%81%db%8c%d8%af",
+      "sourceUrl": "https://boofchi.ir/product/%da%a9%d9%84%d8%a7%d9%87-%da%a9%d8%a7%d8%a8%d9%88%db%8c-%d8%b3%d9%81%db%8c%d8%af/",
+      "sourceCategoryIds": [
+        265,
+        263,
+        255,
+        280
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/73A17B09-E483-44EA-A99D-7039A65FF28C.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-8088",
+      "sourceId": 8088,
+      "sourceSlug": "%d8%ac%d9%88%d8%b1%d8%a7%d8%a8-%d8%b7%d8%b1%d8%ad-cartier",
+      "sourceUrl": "https://boofchi.ir/product/%d8%ac%d9%88%d8%b1%d8%a7%d8%a8-%d8%b7%d8%b1%d8%ad-cartier/",
+      "sourceCategoryIds": [
+        255,
+        263,
+        281
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/02/jorab8-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-5760",
+      "sourceId": 5760,
+      "sourceSlug": "%d8%a8%d8%a7%d8%af%db%8c-%d8%a8%da%af-%d9%86%d8%a7%db%8c%da%a9%db%8c-%d9%85%d8%b4%da%a9%db%8c",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a8%d8%a7%d8%af%db%8c-%d8%a8%da%af-%d9%86%d8%a7%db%8c%da%a9%db%8c-%d9%85%d8%b4%da%a9%db%8c/",
+      "sourceCategoryIds": [
+        255,
+        282,
+        264
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/09/body-bag-4-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8754",
+      "sourceId": 8754,
+      "sourceSlug": "%da%a9%db%8c%d9%81-%d9%be%d9%88%d9%84-%d8%b7%d8%b1%d8%ad-realmadrid",
+      "sourceUrl": "https://boofchi.ir/product/%da%a9%db%8c%d9%81-%d9%be%d9%88%d9%84-%d8%b7%d8%b1%d8%ad-realmadrid/",
+      "sourceCategoryIds": [
+        255,
+        264,
+        283
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/07/IMG_1785.jpeg"
+      ]
+    },
+    {
+      "id": "product-8871",
+      "sourceId": 8871,
+      "sourceSlug": "%d8%af%d8%b3%d8%aa%d8%a8%d9%86%d8%af-%d8%a8%d8%b3%da%a9%d8%aa%d8%a8%d8%a7%d9%84%db%8c-9",
+      "sourceUrl": "https://boofchi.ir/product/%d8%af%d8%b3%d8%aa%d8%a8%d9%86%d8%af-%d8%a8%d8%b3%da%a9%d8%aa%d8%a8%d8%a7%d9%84%db%8c-9/",
+      "sourceCategoryIds": [
+        255,
+        265,
+        284
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/08/IMG_2408.jpeg"
+      ]
+    },
+    {
+      "id": "product-7609",
+      "sourceId": 7609,
+      "sourceSlug": "%d8%b9%db%8c%d9%86%da%a9-%d8%b7%d8%b1%d8%ad-prada-2",
+      "sourceUrl": "https://boofchi.ir/product/%d8%b9%db%8c%d9%86%da%a9-%d8%b7%d8%b1%d8%ad-prada-2/",
+      "sourceCategoryIds": [
+        265,
+        255,
+        286
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/eynak3-1-scaled.jpg",
+        "https://boofchi.ir/wp-content/uploads/2025/12/eynak3-1-2-scaled.jpg",
+        "https://boofchi.ir/wp-content/uploads/2025/12/eynak3-1-1-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-4833",
+      "sourceId": 4833,
+      "sourceSlug": "%d8%a7%d9%86%da%af%d8%b4%d8%aa%d8%b1-%d8%b3%d8%a7%d8%b9%d8%aa",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a7%d9%86%da%af%d8%b4%d8%aa%d8%b1-%d8%b3%d8%a7%d8%b9%d8%aa/",
+      "sourceCategoryIds": [
+        265,
+        287,
+        255
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/angoshtar-saat-scaled.jpg",
+        "https://boofchi.ir/wp-content/uploads/2025/07/angoshtar-saat--scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8455",
+      "sourceId": 8455,
+      "sourceSlug": "%da%86%d8%a7%d8%b1%d9%85-%d8%a8%da%af-%d9%81%d9%84%d8%b2%db%8c-2",
+      "sourceUrl": "https://boofchi.ir/product/%da%86%d8%a7%d8%b1%d9%85-%d8%a8%da%af-%d9%81%d9%84%d8%b2%db%8c-2/",
+      "sourceCategoryIds": [
+        255,
+        265,
+        288,
+        291
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/IMG_4142.jpeg"
+      ]
+    },
+    {
+      "id": "product-7554",
+      "sourceId": 7554,
+      "sourceSlug": "%d9%81%d9%86%d8%af%da%a9-%d8%a8%db%8c%da%a9-91",
+      "sourceUrl": "https://boofchi.ir/product/%d9%81%d9%86%d8%af%da%a9-%d8%a8%db%8c%da%a9-91/",
+      "sourceCategoryIds": [
+        265,
+        255,
+        289
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/fandak49-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-2515",
+      "sourceId": 2515,
+      "sourceSlug": "%d9%87%d8%a7%d8%aa-%d9%88%db%8c%d9%84%d8%b2-%db%b3%db%b4",
+      "sourceUrl": "https://boofchi.ir/product/%d9%87%d8%a7%d8%aa-%d9%88%db%8c%d9%84%d8%b2-%db%b3%db%b4/",
+      "sourceCategoryIds": [
+        255,
+        292
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/hot-wheels-34-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8823",
+      "sourceId": 8823,
+      "sourceSlug": "%da%86%d8%a7%d8%b1%d9%85-amg-2",
+      "sourceUrl": "https://boofchi.ir/product/%da%86%d8%a7%d8%b1%d9%85-amg-2/",
+      "sourceCategoryIds": [
+        255,
+        301,
+        291
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/08/IMG_2351.jpeg"
+      ]
+    },
+    {
+      "id": "product-7759",
+      "sourceId": 7759,
+      "sourceSlug": "%d9%85%d9%be-%da%a9%d8%a7%d9%86%d8%aa%d8%b1-nuke",
+      "sourceUrl": "https://boofchi.ir/product/%d9%85%d9%be-%da%a9%d8%a7%d9%86%d8%aa%d8%b1-nuke/",
+      "sourceCategoryIds": [
+        255,
+        257,
+        303
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/nuke-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-6816",
+      "sourceId": 6816,
+      "sourceSlug": "%d8%a8%da%a9%d8%af%d8%b1%d8%a7%d9%be-%d8%b7%d8%b1%d8%ad-stitch-2",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a8%da%a9%d8%af%d8%b1%d8%a7%d9%be-%d8%b7%d8%b1%d8%ad-stitch-2/",
+      "sourceCategoryIds": [
+        255,
+        306,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/11/bd13-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-4298",
+      "sourceId": 4298,
+      "sourceSlug": "%d8%a2%db%8c%db%8c%d9%86%d9%87-%d8%a7%d9%86%db%8c%d9%85%d9%87-one-piece",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a2%db%8c%db%8c%d9%86%d9%87-%d8%a7%d9%86%db%8c%d9%85%d9%87-one-piece/",
+      "sourceCategoryIds": [
+        259,
+        307,
+        255,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/wanted-miror-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-7797",
+      "sourceId": 7797,
+      "sourceSlug": "%da%af%d9%88%d8%b4%d9%88%d8%a7%d8%b1%d9%87-%d8%b7%d8%b1%d8%ad-%d8%b3%d8%aa%d8%a7%d8%b1%d9%87-3",
+      "sourceUrl": "https://boofchi.ir/product/%da%af%d9%88%d8%b4%d9%88%d8%a7%d8%b1%d9%87-%d8%b7%d8%b1%d8%ad-%d8%b3%d8%aa%d8%a7%d8%b1%d9%87-3/",
+      "sourceCategoryIds": [
+        255,
+        265,
+        308
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/گوشوارع-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-7563",
+      "sourceId": 7563,
+      "sourceSlug": "%da%a9%d9%85%d8%b1%d8%a8%d9%86%d8%af-%d8%b7%d8%b1%d8%ad-%da%af%d9%84-%d8%b1%d8%b2",
+      "sourceUrl": "https://boofchi.ir/product/%da%a9%d9%85%d8%b1%d8%a8%d9%86%d8%af-%d8%b7%d8%b1%d8%ad-%da%af%d9%84-%d8%b1%d8%b2/",
+      "sourceCategoryIds": [
+        263,
+        255,
+        309
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/belt2-scaled.jpg",
+        "https://boofchi.ir/wp-content/uploads/2025/12/belt2--scaled.jpg",
+        "https://boofchi.ir/wp-content/uploads/2025/12/belt2-1-1-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8300",
+      "sourceId": 8300,
+      "sourceSlug": "%d9%85%d8%a7%da%afstar-wars",
+      "sourceUrl": "https://boofchi.ir/product/%d9%85%d8%a7%da%afstar-wars/",
+      "sourceCategoryIds": [
+        266,
+        255,
+        348
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/IMG_0348-e1780941164420.jpeg"
+      ]
+    },
+    {
+      "id": "product-8852",
+      "sourceId": 8852,
+      "sourceSlug": "%da%a9%db%8c%d9%85%d8%af%db%8c-%d8%b4%d8%a7%d9%86%d8%b3%db%8cjujutsu-kaisen",
+      "sourceUrl": "https://boofchi.ir/product/%da%a9%db%8c%d9%85%d8%af%db%8c-%d8%b4%d8%a7%d9%86%d8%b3%db%8cjujutsu-kaisen/",
+      "sourceCategoryIds": [
+        255,
+        349
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/08/IMG_2412.jpeg"
+      ]
+    },
+    {
+      "id": "product-7757",
+      "sourceId": 7757,
+      "sourceSlug": "%d8%b3%d8%b1%d8%af%db%8c%d8%b3-thanos",
+      "sourceUrl": "https://boofchi.ir/product/%d8%b3%d8%b1%d8%af%db%8c%d8%b3-thanos/",
+      "sourceCategoryIds": [
+        255,
+        257,
+        351
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/سردیس-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-7242",
+      "sourceId": 7242,
+      "sourceSlug": "%d9%81%d9%88%d9%85-%d8%a8%d8%b1%d8%af-silent-hill",
+      "sourceUrl": "https://boofchi.ir/product/%d9%81%d9%88%d9%85-%d8%a8%d8%b1%d8%af-silent-hill/",
+      "sourceCategoryIds": [
+        267,
+        255,
+        257,
+        352
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/foam-board3-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8482",
+      "sourceId": 8482,
+      "sourceSlug": "%d8%b3%d8%b7%d9%84-%d8%b7%d8%b1%d8%ad-route-66",
+      "sourceUrl": "https://boofchi.ir/product/%d8%b3%d8%b7%d9%84-%d8%b7%d8%b1%d8%ad-route-66/",
+      "sourceCategoryIds": [
+        353,
+        255,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/33ED8272-20B8-4087-B13C-91C1B16BF168.png.jpeg",
+        "https://boofchi.ir/wp-content/uploads/2026/06/F75E7CDB-A07F-492A-AC5E-F78E70EB44E3.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-8443",
+      "sourceId": 8443,
+      "sourceSlug": "keycap-%d8%b7%d8%b1%d8%ad-%d8%aa%d9%88%d8%aa%d9%88%d8%b1%d9%88-2",
+      "sourceUrl": "https://boofchi.ir/product/keycap-%d8%b7%d8%b1%d8%ad-%d8%aa%d9%88%d8%aa%d9%88%d8%b1%d9%88-2/",
+      "sourceCategoryIds": [
+        255,
+        354
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/IMG_0716.jpeg"
+      ]
+    },
+    {
+      "id": "product-8829",
+      "sourceId": 8829,
+      "sourceSlug": "%d9%82%d9%84%d9%85-harry-potter",
+      "sourceUrl": "https://boofchi.ir/product/%d9%82%d9%84%d9%85-harry-potter/",
+      "sourceCategoryIds": [
+        255,
+        266
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/08/IMG_2354.jpeg",
+        "https://boofchi.ir/wp-content/uploads/2026/08/IMG_2353.jpeg"
+      ]
+    },
+    {
+      "id": "product-8295",
+      "sourceId": 8295,
+      "sourceSlug": "%d9%81%db%8c%da%af%d9%88%d8%b1-%d8%af%d9%88%d8%aa%d8%a7%db%8c%db%8c-%d8%b4%d9%87%d8%b1-%d8%a7%d8%b4%d8%a8%d8%a7%d8%ad",
+      "sourceUrl": "https://boofchi.ir/product/%d9%81%db%8c%da%af%d9%88%d8%b1-%d8%af%d9%88%d8%aa%d8%a7%db%8c%db%8c-%d8%b4%d9%87%d8%b1-%d8%a7%d8%b4%d8%a8%d8%a7%d8%ad/",
+      "sourceCategoryIds": [
+        255,
+        256
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/IMG_0375-e1780938990539.jpeg",
+        "https://boofchi.ir/wp-content/uploads/2026/06/IMG_0376-e1780939034406.jpeg"
+      ]
+    },
+    {
+      "id": "product-8839",
+      "sourceId": 8839,
+      "sourceSlug": "%d8%ac%d8%b9%d8%a8%d9%87-%d8%af%d8%b3%d8%aa%d9%85%d8%a7%d9%84-%da%a9%d8%a7%d8%ba%d8%b0%db%8c",
+      "sourceUrl": "https://boofchi.ir/product/%d8%ac%d8%b9%d8%a8%d9%87-%d8%af%d8%b3%d8%aa%d9%85%d8%a7%d9%84-%da%a9%d8%a7%d8%ba%d8%b0%db%8c/",
+      "sourceCategoryIds": [
+        255,
+        266,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/08/IMG_2413.jpeg"
+      ]
+    },
+    {
+      "id": "product-8349",
+      "sourceId": 8349,
+      "sourceSlug": "%d9%be%d8%a7%d8%af%d8%b1%db%8c-%d8%b7%d8%b1%d8%ad-%d8%b4%d8%b7%d8%b1%d9%86%d8%ac%db%8c",
+      "sourceUrl": "https://boofchi.ir/product/%d9%be%d8%a7%d8%af%d8%b1%db%8c-%d8%b7%d8%b1%d8%ad-%d8%b4%d8%b7%d8%b1%d9%86%d8%ac%db%8c/",
+      "sourceCategoryIds": [
+        255,
+        257,
+        258
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/F7A4FDB9-E33B-4762-94AB-3179316BCCBD.jpeg",
+        "https://boofchi.ir/wp-content/uploads/2026/06/79A634A8-C4FB-49F1-8BFB-BF2F6AFAF5CC.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-8540",
+      "sourceId": 8540,
+      "sourceSlug": "%d8%a8%d8%a7%da%a9%d8%b3-%d9%82%d8%b1%d9%85%d8%b2-%d9%88%db%8c%d8%aa%d8%b1%db%8c%d9%86-%d8%af%d8%a7%d8%b1",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a8%d8%a7%da%a9%d8%b3-%d9%82%d8%b1%d9%85%d8%b2-%d9%88%db%8c%d8%aa%d8%b1%db%8c%d9%86-%d8%af%d8%a7%d8%b1/",
+      "sourceCategoryIds": [
+        255,
+        260,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/AAEA1DB7-6253-45F7-93CB-87D179917F24.png.jpeg",
+        "https://boofchi.ir/wp-content/uploads/2026/06/059F3986-7ECB-43B1-953F-D83E443FD940.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-8192",
+      "sourceId": 8192,
+      "sourceSlug": "%d9%84%d8%a7%db%8c%d8%aa-%d8%a8%d8%a7%da%a9%d8%b3-youtube",
+      "sourceUrl": "https://boofchi.ir/product/%d9%84%d8%a7%db%8c%d8%aa-%d8%a8%d8%a7%da%a9%d8%b3-youtube/",
+      "sourceCategoryIds": [
+        255,
+        257,
+        261
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/02/light-box4-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-6709",
+      "sourceId": 6709,
+      "sourceSlug": "%d9%86%d8%b4%d8%a7%d9%86%da%af%d8%b1-%da%a9%d8%aa%d8%a7%d8%a8-baby-yoda",
+      "sourceUrl": "https://boofchi.ir/product/%d9%86%d8%b4%d8%a7%d9%86%da%af%d8%b1-%da%a9%d8%aa%d8%a7%d8%a8-baby-yoda/",
+      "sourceCategoryIds": [
+        266
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/10/book1-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8352",
+      "sourceId": 8352,
+      "sourceSlug": "%d8%aa%d8%a7%d8%a8%d9%84%d9%88-last-of-us",
+      "sourceUrl": "https://boofchi.ir/product/%d8%aa%d8%a7%d8%a8%d9%84%d9%88-last-of-us/",
+      "sourceCategoryIds": [
+        255,
+        267,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/645BEF51-1429-4D74-8AD8-39C1BB6E3E30.png.jpeg",
+        "https://boofchi.ir/wp-content/uploads/2026/06/6CCFB8A2-712E-4717-B984-F689D82611C6.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-5228",
+      "sourceId": 5228,
+      "sourceSlug": "%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d8%a7%d9%85%d8%b1%d8%ac%d9%86%d8%b3%db%8c-%d8%a8%d8%a7%da%a9%d8%b3-%d8%af%d8%b3%d8%aa%d8%a8%d9%86%d8%af",
+      "sourceUrl": "https://boofchi.ir/product/%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d8%a7%d9%85%d8%b1%d8%ac%d9%86%d8%b3%db%8c-%d8%a8%d8%a7%da%a9%d8%b3-%d8%af%d8%b3%d8%aa%d8%a8%d9%86%d8%af/",
+      "sourceCategoryIds": [
+        255,
+        268,
+        267,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/08/emg-dastband-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8520",
+      "sourceId": 8520,
+      "sourceSlug": "game-of-thrones-4070",
+      "sourceUrl": "https://boofchi.ir/product/game-of-thrones-4070/",
+      "sourceCategoryIds": [
+        255,
+        267,
+        269,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/F3BDFA3E-0DA7-4CDA-B4F4-6E78ECD5BB0B.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-8221",
+      "sourceId": 8221,
+      "sourceSlug": "%d8%aa%d8%a7%d8%a8%d9%84%d9%88%db%8c-%d9%84%da%af%d9%88-rick-morty",
+      "sourceUrl": "https://boofchi.ir/product/%d8%aa%d8%a7%d8%a8%d9%84%d9%88%db%8c-%d9%84%da%af%d9%88-rick-morty/",
+      "sourceCategoryIds": [
+        257,
+        267,
+        270,
+        255
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/02/tbl2-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-3481",
+      "sourceId": 3481,
+      "sourceSlug": "%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d9%87%d8%a7%d8%aa-%d9%88%db%8c%d9%84%d8%b2-dodge-viper",
+      "sourceUrl": "https://boofchi.ir/product/%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d9%87%d8%a7%d8%aa-%d9%88%db%8c%d9%84%d8%b2-dodge-viper/",
+      "sourceCategoryIds": [
+        267,
+        271,
+        255,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/tbl-hw-2-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8557",
+      "sourceId": 8557,
+      "sourceSlug": "%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d9%81%d9%84%d8%b2%db%8c-%d8%b7%d8%b1%d8%ad-%d9%85%d8%a7%d8%b4%db%8c%d9%86-3",
+      "sourceUrl": "https://boofchi.ir/product/%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d9%81%d9%84%d8%b2%db%8c-%d8%b7%d8%b1%d8%ad-%d9%85%d8%a7%d8%b4%db%8c%d9%86-3/",
+      "sourceCategoryIds": [
+        255,
+        267,
+        272,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/7D7E6E67-2FC6-4E8C-89E2-CBF22F7D79C8.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-4319",
+      "sourceId": 4319,
+      "sourceSlug": "%d8%a2%db%8c%db%8c%d9%86%d9%87-paint",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a2%db%8c%db%8c%d9%86%d9%87-paint/",
+      "sourceCategoryIds": [
+        259,
+        274,
+        255,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/miror-Paint-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-3666",
+      "sourceId": 3666,
+      "sourceSlug": "%d9%85%d8%a7%d9%86%da%af%d8%a7-haikyu-ii",
+      "sourceUrl": "https://boofchi.ir/product/%d9%85%d8%a7%d9%86%da%af%d8%a7-haikyu-ii/",
+      "sourceCategoryIds": [
+        262,
+        255,
+        257,
+        276
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/manga-5-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-6989",
+      "sourceId": 6989,
+      "sourceSlug": "%d9%be%da%a9-%d9%be%d9%88%d8%b3%d8%aa%d8%b1-%db%b1%db%b0-%d8%aa%d8%a7%db%8c%db%8c-daredevil",
+      "sourceUrl": "https://boofchi.ir/product/%d9%be%da%a9-%d9%be%d9%88%d8%b3%d8%aa%d8%b1-%db%b1%db%b0-%d8%aa%d8%a7%db%8c%db%8c-daredevil/",
+      "sourceCategoryIds": [
+        255,
+        262,
+        277,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/11/poster3--scaled.jpg",
+        "https://boofchi.ir/wp-content/uploads/2025/11/poster3-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8572",
+      "sourceId": 8572,
+      "sourceSlug": "%da%a9%d9%84%d8%a7%d9%87-%da%a9%d8%a7%d8%a8%d9%88%db%8c-%da%a9%d8%b1%d9%85%db%8c",
+      "sourceUrl": "https://boofchi.ir/product/%da%a9%d9%84%d8%a7%d9%87-%da%a9%d8%a7%d8%a8%d9%88%db%8c-%da%a9%d8%b1%d9%85%db%8c/",
+      "sourceCategoryIds": [
+        255,
+        263,
+        266,
+        280
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/18288F56-5F5F-4FB6-B091-41392BC89432.png.jpeg",
+        "https://boofchi.ir/wp-content/uploads/2026/06/916C831C-BDC3-46AB-9F44-2FE896EDF68D.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-8076",
+      "sourceId": 8076,
+      "sourceSlug": "%d8%ac%d9%88%d8%b1%d8%a7%d8%a8-%d8%b7%d8%b1%d8%ad-vans",
+      "sourceUrl": "https://boofchi.ir/product/%d8%ac%d9%88%d8%b1%d8%a7%d8%a8-%d8%b7%d8%b1%d8%ad-vans/",
+      "sourceCategoryIds": [
+        255,
+        263,
+        281
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/02/jorab15-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-5757",
+      "sourceId": 5757,
+      "sourceSlug": "%d8%a8%d8%a7%d8%af%db%8c-%d8%a8%da%af-%d9%86%d8%a7%db%8c%da%a9%db%8c-%d8%b3%d9%88%d8%b1%d9%85%d9%87-%d8%a7%db%8c",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a8%d8%a7%d8%af%db%8c-%d8%a8%da%af-%d9%86%d8%a7%db%8c%da%a9%db%8c-%d8%b3%d9%88%d8%b1%d9%85%d9%87-%d8%a7%db%8c/",
+      "sourceCategoryIds": [
+        255,
+        282,
+        264
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/09/body-bag1-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8753",
+      "sourceId": 8753,
+      "sourceSlug": "%da%a9%db%8c%d9%81-%d9%be%d9%88%d9%84-%d8%b7%d8%b1%d8%ad-spirited-away-2",
+      "sourceUrl": "https://boofchi.ir/product/%da%a9%db%8c%d9%81-%d9%be%d9%88%d9%84-%d8%b7%d8%b1%d8%ad-spirited-away-2/",
+      "sourceCategoryIds": [
+        255,
+        264,
+        283
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/07/IMG_1789.jpeg"
+      ]
+    },
+    {
+      "id": "product-8870",
+      "sourceId": 8870,
+      "sourceSlug": "%d8%af%d8%b3%d8%aa%d8%a8%d9%86%d8%af-%d8%a8%d8%b3%da%a9%d8%aa%d8%a8%d8%a7%d9%84%db%8c-8",
+      "sourceUrl": "https://boofchi.ir/product/%d8%af%d8%b3%d8%aa%d8%a8%d9%86%d8%af-%d8%a8%d8%b3%da%a9%d8%aa%d8%a8%d8%a7%d9%84%db%8c-8/",
+      "sourceCategoryIds": [
+        255,
+        265,
+        284
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/08/IMG_2407.jpeg"
+      ]
+    },
+    {
+      "id": "product-8382",
+      "sourceId": 8382,
+      "sourceSlug": "%da%af%d8%b1%d8%af%d9%86%d8%a8%d9%86%d8%af-%d8%a2%da%a9%d8%a7%d8%aa%d8%b3%d9%88%da%a9%db%8c-%d9%86%d8%a7%d8%b1%d9%88%d8%aa%d9%88",
+      "sourceUrl": "https://boofchi.ir/product/%da%af%d8%b1%d8%af%d9%86%d8%a8%d9%86%d8%af-%d8%a2%da%a9%d8%a7%d8%aa%d8%b3%d9%88%da%a9%db%8c-%d9%86%d8%a7%d8%b1%d9%88%d8%aa%d9%88/",
+      "sourceCategoryIds": [
+        265,
+        266,
+        255,
+        285
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/F7CA7B72-39EC-4586-856E-1C8AC04B68E8.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-7601",
+      "sourceId": 7601,
+      "sourceSlug": "%d8%b9%db%8c%d9%86%da%a9-%d8%b7%d8%b1%d8%ad-saint-laurent-3",
+      "sourceUrl": "https://boofchi.ir/product/%d8%b9%db%8c%d9%86%da%a9-%d8%b7%d8%b1%d8%ad-saint-laurent-3/",
+      "sourceCategoryIds": [
+        265,
+        286
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/eynak6-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8451",
+      "sourceId": 8451,
+      "sourceSlug": "%da%86%d8%a7%d8%b1%d9%85-%d8%a8%da%af-%d9%81%d9%84%d8%b2%db%8c",
+      "sourceUrl": "https://boofchi.ir/product/%da%86%d8%a7%d8%b1%d9%85-%d8%a8%da%af-%d9%81%d9%84%d8%b2%db%8c/",
+      "sourceCategoryIds": [
+        255,
+        265,
+        288,
+        291
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/33CF2623-289A-428F-A3B3-486C78E38B2F.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-7550",
+      "sourceId": 7550,
+      "sourceSlug": "%d9%81%d9%86%d8%af%da%a9-%d8%a8%db%8c%da%a9-%d8%b7%d8%b1%d8%ad-hotdog-2",
+      "sourceUrl": "https://boofchi.ir/product/%d9%81%d9%86%d8%af%da%a9-%d8%a8%db%8c%da%a9-%d8%b7%d8%b1%d8%ad-hotdog-2/",
+      "sourceCategoryIds": [
+        265,
+        255,
+        289
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/fandak45-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-2512",
+      "sourceId": 2512,
+      "sourceSlug": "%d9%87%d8%a7%d8%aa-%d9%88%db%8c%d9%84%d8%b2-%db%b3%db%b2",
+      "sourceUrl": "https://boofchi.ir/product/%d9%87%d8%a7%d8%aa-%d9%88%db%8c%d9%84%d8%b2-%db%b3%db%b2/",
+      "sourceCategoryIds": [
+        255,
+        292
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/hot-wheels13-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8819",
+      "sourceId": 8819,
+      "sourceSlug": "%da%86%d8%a7%d8%b1%d9%85-amg",
+      "sourceUrl": "https://boofchi.ir/product/%da%86%d8%a7%d8%b1%d9%85-amg/",
+      "sourceCategoryIds": [
+        301,
+        265,
+        255,
+        291
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/08/IMG_2349.jpeg"
+      ]
+    },
+    {
+      "id": "product-4096",
+      "sourceId": 4096,
+      "sourceSlug": "cs2-inferno-map",
+      "sourceUrl": "https://boofchi.ir/product/cs2-inferno-map/",
+      "sourceCategoryIds": [
+        255,
+        257,
+        303
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/cs2-inferno-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-6815",
+      "sourceId": 6815,
+      "sourceSlug": "%d8%a8%da%a9%d8%af%d8%b1%d8%a7%d9%be-%d8%b7%d8%b1%d8%ad-harry-potter-2",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a8%da%a9%d8%af%d8%b1%d8%a7%d9%be-%d8%b7%d8%b1%d8%ad-harry-potter-2/",
+      "sourceCategoryIds": [
+        255,
+        306,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/11/bd12-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-7789",
+      "sourceId": 7789,
+      "sourceSlug": "%da%af%d9%88%d8%b4%d9%88%d8%a7%d8%b1%d9%87-%d8%b7%d8%b1%d8%ad-%d8%aa%d8%af%db%8c",
+      "sourceUrl": "https://boofchi.ir/product/%da%af%d9%88%d8%b4%d9%88%d8%a7%d8%b1%d9%87-%d8%b7%d8%b1%d8%ad-%d8%aa%d8%af%db%8c/",
+      "sourceCategoryIds": [
+        255,
+        265,
+        308
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/گوشواره-۸-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-7562",
+      "sourceId": 7562,
+      "sourceSlug": "%da%a9%d9%85%d8%b1%d8%a8%d9%86%d8%af-%d8%b7%d8%b1%d8%ad-%d9%88%d8%b1%d9%82",
+      "sourceUrl": "https://boofchi.ir/product/%da%a9%d9%85%d8%b1%d8%a8%d9%86%d8%af-%d8%b7%d8%b1%d8%ad-%d9%88%d8%b1%d9%82/",
+      "sourceCategoryIds": [
+        263,
+        255,
+        309
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/belt-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8274",
+      "sourceId": 8274,
+      "sourceSlug": "%d9%85%d8%a7%da%af-%d8%b7%d8%b1%d8%ad-%d8%b3%d8%a7%d9%84%db%8c%d9%88%d8%a7%d9%86",
+      "sourceUrl": "https://boofchi.ir/product/%d9%85%d8%a7%da%af-%d8%b7%d8%b1%d8%ad-%d8%b3%d8%a7%d9%84%db%8c%d9%88%d8%a7%d9%86/",
+      "sourceCategoryIds": [
+        266,
+        255,
+        348
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/IMG_0367-e1780929795389.jpeg"
+      ]
+    },
+    {
+      "id": "product-8846",
+      "sourceId": 8846,
+      "sourceSlug": "%da%a9%db%8c%d9%85%d8%af%db%8c-%d8%b4%d8%a7%d9%86%d8%b3%db%8c-spiderman",
+      "sourceUrl": "https://boofchi.ir/product/%da%a9%db%8c%d9%85%d8%af%db%8c-%d8%b4%d8%a7%d9%86%d8%b3%db%8c-spiderman/",
+      "sourceCategoryIds": [
+        255,
+        349
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/08/IMG_2411.jpeg"
+      ]
+    },
+    {
+      "id": "product-7231",
+      "sourceId": 7231,
+      "sourceSlug": "%d8%af%db%8c%d9%88%d8%a7%d8%b1%da%a9%d9%88%d8%a8-%d9%88-%d8%b3%d8%b1%d8%af%db%8c%d8%b3-batman",
+      "sourceUrl": "https://boofchi.ir/product/%d8%af%db%8c%d9%88%d8%a7%d8%b1%da%a9%d9%88%d8%a8-%d9%88-%d8%b3%d8%b1%d8%af%db%8c%d8%b3-batman/",
+      "sourceCategoryIds": [
+        255,
+        257,
+        351
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/batman-wall-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-7241",
+      "sourceId": 7241,
+      "sourceSlug": "%d9%81%d9%88%d9%85-%d8%a8%d8%b1%d8%af-stop",
+      "sourceUrl": "https://boofchi.ir/product/%d9%81%d9%88%d9%85-%d8%a8%d8%b1%d8%af-stop/",
+      "sourceCategoryIds": [
+        267,
+        255,
+        257,
+        352
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/foam-board1-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8479",
+      "sourceId": 8479,
+      "sourceSlug": "%d8%b3%d8%b7%d9%84-%d8%b7%d8%b1%d8%ad-u-s",
+      "sourceUrl": "https://boofchi.ir/product/%d8%b3%d8%b7%d9%84-%d8%b7%d8%b1%d8%ad-u-s/",
+      "sourceCategoryIds": [
+        255,
+        353,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/9FC70FDE-4D8F-499D-B507-357EDB20E91B.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-8440",
+      "sourceId": 8440,
+      "sourceSlug": "keycap-%d8%b7%d8%b1%d8%ad-%d8%aa%d9%88%d8%aa%d9%88%d8%b1%d9%88",
+      "sourceUrl": "https://boofchi.ir/product/keycap-%d8%b7%d8%b1%d8%ad-%d8%aa%d9%88%d8%aa%d9%88%d8%b1%d9%88/",
+      "sourceCategoryIds": [
+        255,
+        354
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/IMG_0716.jpeg"
+      ]
+    },
+    {
+      "id": "product-8593",
+      "sourceId": 8593,
+      "sourceSlug": "%d8%a8%d8%a7%d8%af%d8%a8%d8%b2%d9%86",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a8%d8%a7%d8%af%d8%a8%d8%b2%d9%86/",
+      "sourceCategoryIds": [
+        255,
+        266
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/79360D76-62B1-478C-B33E-EE7329A142C6.png-Copy-3.jpeg"
+      ]
+    },
+    {
+      "id": "product-8260",
+      "sourceId": 8260,
+      "sourceSlug": "%d9%81%db%8c%da%af%d9%88%d8%b1-spiderman-6",
+      "sourceUrl": "https://boofchi.ir/product/%d9%81%db%8c%da%af%d9%88%d8%b1-spiderman-6/",
+      "sourceCategoryIds": [
+        255,
+        256
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/spiderman-org-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8592",
+      "sourceId": 8592,
+      "sourceSlug": "%d8%aa%d8%a8%d8%b1-%da%a9%d8%b1%db%8c%d8%aa%d9%88%d8%b3",
+      "sourceUrl": "https://boofchi.ir/product/%d8%aa%d8%a8%d8%b1-%da%a9%d8%b1%db%8c%d8%aa%d9%88%d8%b3/",
+      "sourceCategoryIds": [
+        266,
+        255,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/C301AB15-B1C3-4CE9-AA97-262469E6404D.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-8346",
+      "sourceId": 8346,
+      "sourceSlug": "%d9%be%d8%a7%d8%af%d8%b1%db%8c-%d8%b7%d8%b1%d8%ad-chorome-hearts",
+      "sourceUrl": "https://boofchi.ir/product/%d9%be%d8%a7%d8%af%d8%b1%db%8c-%d8%b7%d8%b1%d8%ad-chorome-hearts/",
+      "sourceCategoryIds": [
+        255,
+        257,
+        258
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/38E98D90-8F1D-4D1B-B249-0697C021733D.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-8536",
+      "sourceId": 8536,
+      "sourceSlug": "%d8%a8%d8%a7%da%a9%d8%b3-%da%86%d9%88%d8%a8%db%8c-%d9%85%d8%b4%da%a9%db%8c",
+      "sourceUrl": "https://boofchi.ir/product/%d8%a8%d8%a7%da%a9%d8%b3-%da%86%d9%88%d8%a8%db%8c-%d9%85%d8%b4%da%a9%db%8c/",
+      "sourceCategoryIds": [
+        255,
+        260,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/DD2E7251-468E-4EC8-95B6-F63E6C09E4D1.png.jpeg"
+      ]
+    },
+    {
+      "id": "product-7800",
+      "sourceId": 7800,
+      "sourceSlug": "%d9%84%d8%a7%db%8c%d8%aa-%d8%a8%d8%a7%da%a9%d8%b3-%d9%84%da%af%d9%88",
+      "sourceUrl": "https://boofchi.ir/product/%d9%84%d8%a7%db%8c%d8%aa-%d8%a8%d8%a7%da%a9%d8%b3-%d9%84%da%af%d9%88/",
+      "sourceCategoryIds": [
+        255,
+        257,
+        261
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/lego-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-4674",
+      "sourceId": 4674,
+      "sourceSlug": "%da%af%d8%a7%d8%b1%d8%a7%da%98-%d8%af%d8%b3%d8%aa-%d8%b3%d8%a7%d8%b2-%d9%87%d8%a7%d8%aa-%d9%88%db%8c%d9%84%d8%b2",
+      "sourceUrl": "https://boofchi.ir/product/%da%af%d8%a7%d8%b1%d8%a7%da%98-%d8%af%d8%b3%d8%aa-%d8%b3%d8%a7%d8%b2-%d9%87%d8%a7%d8%aa-%d9%88%db%8c%d9%84%d8%b2/",
+      "sourceCategoryIds": [
+        266
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/07/garage-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-7230",
+      "sourceId": 7230,
+      "sourceSlug": "%d8%aa%d8%a7%d8%a8%d9%84%d9%88-harry-potter",
+      "sourceUrl": "https://boofchi.ir/product/%d8%aa%d8%a7%d8%a8%d9%84%d9%88-harry-potter/",
+      "sourceCategoryIds": [
+        267,
+        255,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/12/tbl2-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-5227",
+      "sourceId": 5227,
+      "sourceSlug": "%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d8%a7%d9%85%d8%b1%d8%ac%d9%86%d8%b3%db%8c-%d8%a8%d8%a7%da%a9%d8%b3-bitcoin",
+      "sourceUrl": "https://boofchi.ir/product/%d8%aa%d8%a7%d8%a8%d9%84%d9%88-%d8%a7%d9%85%d8%b1%d8%ac%d9%86%d8%b3%db%8c-%d8%a8%d8%a7%da%a9%d8%b3-bitcoin/",
+      "sourceCategoryIds": [
+        255,
+        268,
+        267,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2025/08/emg-bit-scaled.jpg"
+      ]
+    },
+    {
+      "id": "product-8517",
+      "sourceId": 8517,
+      "sourceSlug": "4070",
+      "sourceUrl": "https://boofchi.ir/product/4070/",
+      "sourceCategoryIds": [
+        255,
+        267,
+        269,
+        257
+      ],
+      "originalImages": [
+        "https://boofchi.ir/wp-content/uploads/2026/06/24C3F31D-A066-477E-B152-F0A86CBB40E2.png.jpeg"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "category-354",
+      "sourceId": 354,
+      "sourceSlug": "key-cap%d8%af%da%a9%d9%85%d9%87-%da%a9%db%8c%d8%a8%d9%88%d8%b1%d8%af"
+    },
+    {
+      "id": "category-301",
+      "sourceId": 301,
+      "sourceSlug": "%d8%a2%d9%88%db%8c%d8%b2-%d9%85%d8%a7%d8%b4%db%8c%d9%86"
+    },
+    {
+      "id": "category-259",
+      "sourceId": 259,
+      "sourceSlug": "miror"
+    },
+    {
+      "id": "category-274",
+      "sourceId": 274,
+      "sourceSlug": "paint-miror"
+    },
+    {
+      "id": "category-307",
+      "sourceId": 307,
+      "sourceSlug": "%d8%a2%db%8c%db%8c%d9%86%d9%87-wanted"
+    },
+    {
+      "id": "category-273",
+      "sourceId": 273,
+      "sourceSlug": "knife-miror"
+    },
+    {
+      "id": "category-275",
+      "sourceId": 275,
+      "sourceSlug": "convex-miror"
+    },
+    {
+      "id": "category-265",
+      "sourceId": 265,
+      "sourceSlug": "accesory"
+    },
+    {
+      "id": "category-256",
+      "sourceId": 256,
+      "sourceSlug": "%d9%81%db%8c%da%af%d9%88%d8%b1"
+    },
+    {
+      "id": "category-268",
+      "sourceId": 268,
+      "sourceSlug": "emgbox"
+    },
+    {
+      "id": "category-287",
+      "sourceId": 287,
+      "sourceSlug": "ring"
+    },
+    {
+      "id": "category-282",
+      "sourceId": 282,
+      "sourceSlug": "body-bag"
+    },
+    {
+      "id": "category-260",
+      "sourceId": 260,
+      "sourceSlug": "boxkomod"
+    },
+    {
+      "id": "category-306",
+      "sourceId": 306,
+      "sourceSlug": "%d8%a8%da%a9%d8%af%d8%b1%d8%a7%d9%be-%d9%88-%d9%be%d8%b1%da%86%d9%85"
+    },
+    {
+      "id": "category-353",
+      "sourceId": 353,
+      "sourceSlug": "%d9%be%d8%a7%d9%81-%d9%88-%d8%b3%d8%b7%d9%84"
+    },
+    {
+      "id": "category-262",
+      "sourceId": 262,
+      "sourceSlug": "poster"
+    },
+    {
+      "id": "category-277",
+      "sourceId": 277,
+      "sourceSlug": "wall-poster"
+    },
+    {
+      "id": "category-263",
+      "sourceId": 263,
+      "sourceSlug": "clothes"
+    },
+    {
+      "id": "category-267",
+      "sourceId": 267,
+      "sourceSlug": "tablo"
+    },
+    {
+      "id": "category-269",
+      "sourceId": 269,
+      "sourceSlug": "tablo-4070"
+    },
+    {
+      "id": "category-272",
+      "sourceId": 272,
+      "sourceSlug": "felezi-tablo"
+    },
+    {
+      "id": "category-270",
+      "sourceId": 270,
+      "sourceSlug": "lego-tablo"
+    },
+    {
+      "id": "category-271",
+      "sourceId": 271,
+      "sourceSlug": "hw-tablo"
+    },
+    {
+      "id": "category-266",
+      "sourceId": 266,
+      "sourceSlug": "%d8%ac%d8%a7%d9%84%d8%a8%db%8c-%d8%ac%d8%a7%d8%aa"
+    },
+    {
+      "id": "category-281",
+      "sourceId": 281,
+      "sourceSlug": "socks"
+    },
+    {
+      "id": "category-255",
+      "sourceId": 255,
+      "sourceSlug": "%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa"
+    },
+    {
+      "id": "category-284",
+      "sourceId": 284,
+      "sourceSlug": "bracelet"
+    },
+    {
+      "id": "category-257",
+      "sourceId": 257,
+      "sourceSlug": "decorative"
+    },
+    {
+      "id": "category-351",
+      "sourceId": 351,
+      "sourceSlug": "%d8%af%db%8c%d9%88%d8%a7%d8%b1%da%a9%d9%88%d8%a8-%d9%88-%d8%b3%d8%b1%d8%af%db%8c%d8%b3"
+    },
+    {
+      "id": "category-288",
+      "sourceId": 288,
+      "sourceSlug": "pants-chain"
+    },
+    {
+      "id": "category-291",
+      "sourceId": 291,
+      "sourceSlug": "the-key"
+    },
+    {
+      "id": "category-349",
+      "sourceId": 349,
+      "sourceSlug": "%d8%b4%d8%a7%d9%86%d8%b3%db%8c-%d9%88-%d9%85%db%8c%d8%b3%d8%aa%d8%b1%db%8c-%d8%a8%d8%a7%da%a9%d8%b3"
+    },
+    {
+      "id": "category-286",
+      "sourceId": 286,
+      "sourceSlug": "glasses"
+    },
+    {
+      "id": "category-258",
+      "sourceId": 258,
+      "sourceSlug": "poster-carpet"
+    },
+    {
+      "id": "category-289",
+      "sourceId": 289,
+      "sourceSlug": "lighter"
+    },
+    {
+      "id": "category-352",
+      "sourceId": 352,
+      "sourceSlug": "%d9%81%d9%88%d9%85-%d8%a8%d8%b1%d8%af"
+    },
+    {
+      "id": "category-280",
+      "sourceId": 280,
+      "sourceSlug": "hat"
+    },
+    {
+      "id": "category-309",
+      "sourceId": 309,
+      "sourceSlug": "%da%a9%d9%85%d8%b1%d8%a8%d9%86%d8%af"
+    },
+    {
+      "id": "category-264",
+      "sourceId": 264,
+      "sourceSlug": "bag"
+    },
+    {
+      "id": "category-283",
+      "sourceId": 283,
+      "sourceSlug": "wallet"
+    },
+    {
+      "id": "category-285",
+      "sourceId": 285,
+      "sourceSlug": "necklace"
+    },
+    {
+      "id": "category-308",
+      "sourceId": 308,
+      "sourceSlug": "%da%af%d9%88%d8%b4%d9%88%d8%a7%d8%b1%d9%87"
+    },
+    {
+      "id": "category-261",
+      "sourceId": 261,
+      "sourceSlug": "light-box"
+    },
+    {
+      "id": "category-348",
+      "sourceId": 348,
+      "sourceSlug": "%d9%85%d8%a7%da%af"
+    },
+    {
+      "id": "category-276",
+      "sourceId": 276,
+      "sourceSlug": "wall-manga"
+    },
+    {
+      "id": "category-303",
+      "sourceId": 303,
+      "sourceSlug": "%d9%85%d9%be-%da%a9%d8%a7%d9%86%d8%aa%d8%b1"
+    },
+    {
+      "id": "category-292",
+      "sourceId": 292,
+      "sourceSlug": "hot-wheels"
+    }
+  ],
+  "brandAssets": [
+    {
+      "id": "boofchi-logo",
+      "kind": "logo",
+      "sourceUrl": "https://boofchi.ir/wp-content/uploads/2025/10/logo-boofchi.png",
+      "localPath": "/media/brand/boofchi-logo.png",
+      "width": 200,
+      "height": 80,
+      "bytes": 7897
+    },
+    {
+      "id": "boofchi-store-1",
+      "kind": "store-photo",
+      "sourceUrl": "https://boofchi.ir/wp-content/uploads/2025/11/DSC09743-scaled.jpg",
+      "localPath": "/media/brand/store/boofchi-store-1.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 173748
+    },
+    {
+      "id": "boofchi-store-2",
+      "kind": "store-photo",
+      "sourceUrl": "https://boofchi.ir/wp-content/uploads/2025/11/IMG_1327-scaled.jpg",
+      "localPath": "/media/brand/store/boofchi-store-2.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 141700
+    },
+    {
+      "id": "boofchi-store-3",
+      "kind": "store-photo",
+      "sourceUrl": "https://boofchi.ir/wp-content/uploads/2025/11/DSC09734-scaled.jpg",
+      "localPath": "/media/brand/store/boofchi-store-3.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 96610
+    },
+    {
+      "id": "boofchi-store-4",
+      "kind": "store-photo",
+      "sourceUrl": "https://boofchi.ir/wp-content/uploads/2025/11/DSC09754-scaled.jpg",
+      "localPath": "/media/brand/store/boofchi-store-4.webp",
+      "width": 1600,
+      "height": 901,
+      "bytes": 58746
+    },
+    {
+      "id": "boofchi-store-5",
+      "kind": "store-photo",
+      "sourceUrl": "https://boofchi.ir/wp-content/uploads/2025/11/DSC09758-scaled.jpg",
+      "localPath": "/media/brand/store/boofchi-store-5.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 148274
+    }
+  ]
+}

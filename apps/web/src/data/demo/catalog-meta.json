@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "sourceWebsite": "https://boofchi.ir",
+  "importedAt": "2026-08-20T17:52:30.305Z",
+  "observedPublicProductCount": 966,
+  "selectedProductCount": 96,
+  "categoryCount": 47,
+  "universeCount": 8,
+  "fandomCount": 0,
+  "productsMappedToUniverse": 14,
+  "unclassifiedProductCount": 82,
+  "characterCount": 0,
+  "collectionCount": 0,
+  "primaryImageCount": 96,
+  "galleryImageCount": 18,
+  "brandAssetCount": 1,
+  "storePhotoCount": 5,
+  "mediaBytes": 8473605,
+  "moneyUnit": "TOMAN",
+  "selectionStrategy": "First 6 homepage-aligned Store API products, then in-stock-first round-robin selection across deepest source categories."
+}

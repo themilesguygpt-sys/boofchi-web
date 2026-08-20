@@ -1,0 +1,66 @@
+[
+  {
+    "id": "universe-one-piece",
+    "slug": "one-piece",
+    "name": {
+      "fa": "One Piece",
+      "en": "One Piece"
+    }
+  },
+  {
+    "id": "universe-berserk",
+    "slug": "berserk",
+    "name": {
+      "fa": "Berserk",
+      "en": "Berserk"
+    }
+  },
+  {
+    "id": "universe-gta",
+    "slug": "gta",
+    "name": {
+      "fa": "Grand Theft Auto",
+      "en": "Grand Theft Auto"
+    }
+  },
+  {
+    "id": "universe-the-last-of-us",
+    "slug": "the-last-of-us",
+    "name": {
+      "fa": "The Last of Us",
+      "en": "The Last of Us"
+    }
+  },
+  {
+    "id": "universe-jujutsu-kaisen",
+    "slug": "jujutsu-kaisen",
+    "name": {
+      "fa": "Jujutsu Kaisen",
+      "en": "Jujutsu Kaisen"
+    }
+  },
+  {
+    "id": "universe-spider-man",
+    "slug": "spider-man",
+    "name": {
+      "fa": "Spider-Man",
+      "en": "Spider-Man"
+    }
+  },
+  {
+    "id": "universe-batman",
+    "slug": "batman",
+    "name": {
+      "fa": "Batman",
+      "en": "Batman"
+    }
+  },
+  {
+    "id": "universe-harry-potter",
+    "slug": "harry-potter",
+    "name": {
+      "fa": "Harry Potter",
+      "en": "Harry Potter"
+    }
+  }
+]
