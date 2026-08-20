@@ -33,9 +33,6 @@ export function ProductCard({ product, universe }: ProductCardProps) {
             <span className="badge badge--muted">ناموجود</span>
           ) : null}
         </div>
-        <span className="product-card__view" aria-hidden="true">
-          برای دیدن جزئیات آماده می‌شه
-        </span>
       </div>
 
       <div className="product-card__body">

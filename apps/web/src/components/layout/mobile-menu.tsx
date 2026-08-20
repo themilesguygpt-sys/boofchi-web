@@ -13,10 +13,20 @@ const links = [
   { href: "/#story", label: "قصه‌ی بوفچی" },
 ] as const;
 
+const focusableSelector = [
+  "a[href]",
+  "button:not([disabled])",
+  "input:not([disabled])",
+  "select:not([disabled])",
+  "textarea:not([disabled])",
+  '[tabindex]:not([tabindex="-1"])',
+].join(",");
+
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!open) return;
@@ -27,7 +37,40 @@ export function MobileMenu() {
     closeRef.current?.focus();
 
     function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") {
+        setOpen(false);
+        return;
+      }
+
+      if (event.key !== "Tab") return;
+
+      const panel = panelRef.current;
+      const focusableElements = Array.from(
+        panel?.querySelectorAll<HTMLElement>(focusableSelector) ?? [],
+      ).filter(
+        (element) =>
+          element.getAttribute("aria-hidden") !== "true" &&
+          !element.hasAttribute("hidden") &&
+          element.getClientRects().length > 0,
+      );
+
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements.at(-1);
+
+      if (!panel || !firstElement || !lastElement) {
+        event.preventDefault();
+        return;
+      }
+
+      const focusIsOutside = !panel.contains(document.activeElement);
+
+      if (event.shiftKey && (document.activeElement === firstElement || focusIsOutside)) {
+        event.preventDefault();
+        lastElement.focus();
+      } else if (!event.shiftKey && (document.activeElement === lastElement || focusIsOutside)) {
+        event.preventDefault();
+        firstElement.focus();
+      }
     }
 
     window.addEventListener("keydown", onKeyDown);
@@ -57,10 +100,17 @@ export function MobileMenu() {
           <button
             type="button"
             className="mobile-menu__backdrop"
-            aria-label="بستن منوی اصلی"
+            aria-hidden="true"
+            tabIndex={-1}
             onClick={() => setOpen(false)}
           />
-          <div className="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="منوی اصلی">
+          <div
+            ref={panelRef}
+            className="mobile-menu__panel"
+            role="dialog"
+            aria-modal="true"
+            aria-label="منوی اصلی"
+          >
             <div className="mobile-menu__top">
               <span className="brand-mark brand-mark--menu">
                 <Image
@@ -94,7 +144,7 @@ export function MobileMenu() {
               </ul>
             </nav>
             <p className="mobile-menu__note">
-              جست‌وجو، سبد خرید و پروفایل در مرحله‌ی بعدی فروشگاه فعال می‌شوند.
+              جست‌وجو، سبد خرید و پروفایل به‌زودی به بوفچی اضافه می‌شن.
             </p>
           </div>
         </div>

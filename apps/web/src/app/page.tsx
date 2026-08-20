@@ -118,7 +118,7 @@ export default async function Home() {
             index="02"
             eyebrow="از قصه وارد شو"
             title="دنیای موردعلاقه‌ت کجاست؟"
-            description="هشت دنیای واقعی از همین ویترین؛ بدون دسته‌بندی‌های ساختگی و حدس‌های بی‌پایه."
+            description="هشت دنیا از قصه‌ها و بازی‌هایی که دوستشون داری؛ از اینجا مسیر خودتو پیدا کن."
           />
           <div className="universe-grid">
             {catalog.universes.map(({ universe, product }, index) => (
@@ -195,8 +195,8 @@ export default async function Home() {
             <span className="badge badge--sale">به‌زودی</span>
             <h2 id="collector-title">کالکشن تو، بخشی از هویت توئه.</h2>
             <p>
-              بوفچی قراره جایی باشه برای ساختن لیست علاقه‌مندی، دنبال کردن کالکشن‌ها و
-              شکل دادن به پروفایل فندومی خودت—این بخش هنوز در حال ساخته‌شدنه.
+              به‌زودی می‌تونی لیست علاقه‌مندی و کالکشن‌هات رو بسازی و پروفایل فندومی
+              خودت رو شکل بدی.
             </p>
             <span className="collector-section__signature" dir="ltr">COLLECT / EXPRESS / REPEAT</span>
           </div>
