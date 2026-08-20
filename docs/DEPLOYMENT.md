@@ -16,7 +16,7 @@ Cloudflare Worker
 
 GitHub (`themilesguygpt-sys/boofchi-web`) is canonical. Cloudflare is a derived demo/development environment; it does not replace the current production site or change `boofchi.ir` DNS, hosting, or WordPress.
 
-Current demo URL: pending initial Cloudflare authorization/deployment
+Current demo URL: https://boofchi-web.themilesguygpt.workers.dev
 
 ## Local workflow
 
@@ -37,20 +37,20 @@ OpenNext warns that native Windows builds are not fully supported and recommends
 
 ## Cloudflare Workers Builds
 
-Connect the GitHub repository with Cloudflare's native Git integration and official OAuth flow. Use these settings:
+Cloudflare's native Git integration is active with these production settings:
 
 - Repository: `themilesguygpt-sys/boofchi-web`
 - Production branch: `main`
 - Worker name: `boofchi-web`
-- Root directory: `apps/web`
+- Root directory: `/` (repository root)
 - Install command: `pnpm install --frozen-lockfile` (Workers Builds automatic dependency install)
 - Build command: `pnpm cf:build`
-- Deploy command: `pnpm exec opennextjs-cloudflare deploy`
-- Non-production branch deploy command: `pnpm exec opennextjs-cloudflare upload`
-- Build variables: `NODE_VERSION=24` and `PNPM_VERSION=11.22.0`
+- Deploy command: `pnpm --filter @boofchi/web exec opennextjs-cloudflare deploy`
+- Non-production branch builds: disabled
+- Build environment: Node 24 and pnpm 11.22.0 (resolved by Workers Builds from the repository configuration; no explicit build variables are required)
 - Application secrets or runtime environment variables: none
 
-The app-scoped scripts are available because the configured root is `apps/web`; root-level `pnpm cf:*` scripts forward to the same workspace for local use. Every approved push to `main` will run the build and deploy commands after the Git integration is authorized. Non-production branch builds may be enabled to upload preview versions without promoting them.
+The repository root is required so the automatic install retains the workspace lockfile and local packages. The root-level `pnpm cf:*` scripts forward to `@boofchi/web`, and the filtered deploy command runs the app-local OpenNext CLI. Every approved push to `main` now automatically runs the build and deploy commands. The first Cloudflare Linux OpenNext build and workers.dev deployment were validated successfully.
 
 ## Human authorization boundary
 
