@@ -1,6 +1,9 @@
 export type {
+  AvailabilityFilterOption,
+  AvailableProductFilters,
   CatalogDataSource,
   Category,
+  CategoryFilterOption,
   Character,
   Collection,
   EntityId,
@@ -12,6 +15,8 @@ export type {
   ProductAvailability,
   ProductImage,
   ProductQuery,
+  ProductSort,
   MoneyUnit,
   Universe,
+  UniverseFilterOption,
 } from "./catalog";

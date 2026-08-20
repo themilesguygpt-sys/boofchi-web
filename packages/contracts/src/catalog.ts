@@ -16,6 +16,8 @@ export type MoneyUnit = "TOMAN";
 
 export type ProductAvailability = "in-stock" | "out-of-stock" | "unknown";
 
+export type ProductSort = "default" | "price-asc" | "price-desc" | "name";
+
 export interface Universe {
   id: EntityId;
   slug: string;
@@ -84,9 +86,11 @@ export interface Product {
 export interface ProductQuery {
   categoryId?: EntityId;
   universeId?: EntityId;
+  availability?: ProductAvailability;
   fandomId?: EntityId;
   collectionId?: EntityId;
   search?: string;
+  sort?: ProductSort;
   cursor?: string;
   limit?: number;
 }
@@ -96,12 +100,37 @@ export interface PageResult<T> {
   nextCursor?: string;
 }
 
+export interface CategoryFilterOption {
+  category: Category;
+  count: number;
+}
+
+export interface UniverseFilterOption {
+  universe: Universe;
+  count: number;
+}
+
+export interface AvailabilityFilterOption {
+  availability: ProductAvailability;
+  count: number;
+}
+
+export interface AvailableProductFilters {
+  categories: readonly CategoryFilterOption[];
+  universes: readonly UniverseFilterOption[];
+  availability: readonly AvailabilityFilterOption[];
+}
+
 /**
  * Minimal boundary for demo data today and a Medusa REST adapter later.
  * UI code consumes this contract rather than a particular JSON payload.
  */
 export interface CatalogDataSource {
   getProductBySlug(slug: string): Promise<Product | null>;
+  getCategoryBySlug(slug: string): Promise<Category | null>;
+  getUniverseBySlug(slug: string): Promise<Universe | null>;
+  getRelatedProducts(productSlug: string, limit?: number): Promise<readonly Product[]>;
+  getAvailableFilters(query?: ProductQuery): Promise<AvailableProductFilters>;
   listProducts(query?: ProductQuery): Promise<PageResult<Product>>;
   listCategories(): Promise<readonly Category[]>;
   listUniverses(): Promise<readonly Universe[]>;

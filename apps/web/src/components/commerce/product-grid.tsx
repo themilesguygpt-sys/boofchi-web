@@ -1,27 +1,25 @@
 import type { Product, Universe } from "@boofchi/contracts";
 
 import { ProductCard } from "@/components/product/product-card";
-import { ProductRailControls } from "@/components/product/product-rail-controls";
 
-interface ProductRailProps {
+interface ProductGridProps {
   products: readonly Product[];
   universes: readonly Universe[];
-  label: string;
 }
 
-export function ProductRail({ products, universes, label }: ProductRailProps) {
+export function ProductGrid({ products, universes }: ProductGridProps) {
   const universeById = new Map(universes.map((universe) => [universe.id, universe]));
 
   return (
-    <ProductRailControls label={label}>
+    <div className="product-grid" role="list">
       {products.map((product) => (
-        <div role="listitem" key={product.id}>
+        <div key={product.id} role="listitem">
           <ProductCard
             product={product}
             universe={product.universeId ? universeById.get(product.universeId) : undefined}
           />
         </div>
       ))}
-    </ProductRailControls>
+    </div>
   );
 }

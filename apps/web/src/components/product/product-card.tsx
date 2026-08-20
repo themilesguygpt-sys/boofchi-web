@@ -1,5 +1,6 @@
 import type { Product, Universe } from "@boofchi/contracts";
 import Image from "next/image";
+import Link from "next/link";
 
 import { BidiText } from "@/components/bidi-text";
 import { formatMoney } from "@/lib/format-money";
@@ -18,46 +19,48 @@ export function ProductCard({ product, universe }: ProductCardProps) {
 
   return (
     <article className="product-card">
-      <div className="product-card__media">
-        {image ? (
-          <Image
-            src={image.path}
-            alt={image.alt || product.title.fa}
-            fill
-            sizes="(max-width: 479px) 72vw, (max-width: 767px) 46vw, (max-width: 1199px) 30vw, 22vw"
-          />
-        ) : null}
-        <div className="product-card__badges">
-          {hasSale ? <span className="badge badge--sale">قیمت ویژه</span> : null}
-          {product.availability === "out-of-stock" ? (
-            <span className="badge badge--muted">ناموجود</span>
+      <Link className="product-card__link" href={`/product/${product.slug}`}>
+        <div className="product-card__media">
+          {image ? (
+            <Image
+              src={image.path}
+              alt={image.alt || product.title.fa}
+              fill
+              sizes="(max-width: 479px) 46vw, (max-width: 767px) 46vw, (max-width: 1199px) 30vw, 22vw"
+            />
           ) : null}
+          <div className="product-card__badges">
+            {hasSale ? <span className="badge badge--sale">قیمت ویژه</span> : null}
+            {product.availability === "out-of-stock" ? (
+              <span className="badge badge--muted">ناموجود</span>
+            ) : null}
+          </div>
         </div>
-      </div>
 
-      <div className="product-card__body">
-        <div className="product-card__meta">
-          {universe ? <BidiText dir="ltr">{universe.name.en ?? universe.name.fa}</BidiText> : <span>BOOFCHI PICK</span>}
-          <span>{product.availability === "in-stock" ? "موجود" : "ناموجود"}</span>
+        <div className="product-card__body">
+          <div className="product-card__meta">
+            {universe ? <BidiText dir="ltr">{universe.name.en ?? universe.name.fa}</BidiText> : <span>BOOFCHI PICK</span>}
+            <span>{product.availability === "in-stock" ? "موجود" : "ناموجود"}</span>
+          </div>
+          <h3>
+            <BidiText dir="auto">{product.title.fa}</BidiText>
+          </h3>
+          <div className="product-card__price">
+            {hasSale && product.regularPrice ? (
+              <del>
+                <BidiText dir="rtl">{formatMoney(product.regularPrice)}</BidiText>
+              </del>
+            ) : null}
+            {product.price.amount > 0 ? (
+              <strong>
+                <BidiText dir="rtl">{formatMoney(product.price)}</BidiText>
+              </strong>
+            ) : (
+              <strong>قیمت در فروشگاه</strong>
+            )}
+          </div>
         </div>
-        <h3>
-          <BidiText dir="auto">{product.title.fa}</BidiText>
-        </h3>
-        <div className="product-card__price">
-          {hasSale && product.regularPrice ? (
-            <del>
-              <BidiText dir="rtl">{formatMoney(product.regularPrice)}</BidiText>
-            </del>
-          ) : null}
-          {product.price.amount > 0 ? (
-            <strong>
-              <BidiText dir="rtl">{formatMoney(product.price)}</BidiText>
-            </strong>
-          ) : (
-            <strong>قیمت در فروشگاه</strong>
-          )}
-        </div>
-      </div>
+      </Link>
     </article>
   );
 }

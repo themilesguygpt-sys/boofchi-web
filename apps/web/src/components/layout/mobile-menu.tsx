@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import { CloseIcon, MenuIcon } from "@/components/ui/icons";
 
 const links = [
-  { href: "/#catalog", label: "منتخب بوفچی" },
+  { href: "/shop", label: "همه محصولات" },
   { href: "/#universes", label: "دنیاها" },
   { href: "/#categories", label: "دسته‌بندی‌ها" },
   { href: "/#story", label: "خودِ بوفچی" },

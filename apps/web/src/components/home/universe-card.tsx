@@ -1,5 +1,6 @@
 import type { Product, Universe } from "@boofchi/contracts";
 import Image from "next/image";
+import Link from "next/link";
 
 import { BidiText } from "@/components/bidi-text";
 
@@ -13,7 +14,7 @@ export function UniverseCard({ universe, product, index }: UniverseCardProps) {
   const image = product.images.find((item) => item.primary) ?? product.images[0];
 
   return (
-    <a className="universe-card" href="#catalog" aria-label={`کشف دنیای ${universe.name.fa}`}>
+    <Link className="universe-card" href={`/universe/${universe.slug}`} aria-label={`کشف دنیای ${universe.name.fa}`}>
       {image ? (
         <Image
           src={image.path}
@@ -30,6 +31,6 @@ export function UniverseCard({ universe, product, index }: UniverseCardProps) {
         <BidiText dir="ltr">{universe.name.en ?? universe.name.fa}</BidiText>
       </span>
       <span className="universe-card__action">کشف این دنیا</span>
-    </a>
+    </Link>
   );
 }

@@ -29,8 +29,8 @@ export function SiteFooter() {
         <div className="site-footer__grid">
           <section aria-labelledby="footer-shop">
             <h2 id="footer-shop">فروشگاه</h2>
-            <Link href="/#catalog">منتخب بوفچی</Link>
-            <Link href="/#discovery">کشف‌های بیشتر</Link>
+            <Link href="/shop">همه محصولات</Link>
+            <Link href="/shop?availability=in-stock">محصولات موجود</Link>
           </section>
           <section aria-labelledby="footer-discovery">
             <h2 id="footer-discovery">کشف</h2>

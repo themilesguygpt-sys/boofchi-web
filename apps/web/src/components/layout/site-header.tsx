@@ -5,7 +5,7 @@ import { MobileMenu } from "@/components/layout/mobile-menu";
 import { BagIcon, HeartIcon, SearchIcon, UserIcon } from "@/components/ui/icons";
 
 const navigation = [
-  { href: "/#catalog", label: "منتخب بوفچی" },
+  { href: "/shop", label: "همه محصولات" },
   { href: "/#universes", label: "دنیاها" },
   { href: "/#categories", label: "چی می‌خوای؟" },
   { href: "/#story", label: "خودِ بوفچی" },
@@ -46,7 +46,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="header-actions" aria-label="ابزارهای فروشگاه">
-          <Link className="icon-button" href="/#discovery" aria-label="رفتن به کشف محصولات">
+          <Link className="icon-button" href="/shop" aria-label="رفتن به محصولات">
             <SearchIcon />
           </Link>
           <button className="icon-button desktop-only" type="button" disabled title="علاقه‌مندی‌ها؛ به‌زودی">
