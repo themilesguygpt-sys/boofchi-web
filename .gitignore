@@ -9,6 +9,8 @@ node_modules/
 
 # Next.js and Turborepo
 .next/
+.open-next/
+.wrangler/
 out/
 .turbo/
 dist/

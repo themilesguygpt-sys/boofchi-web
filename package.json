@@ -4,13 +4,16 @@
   "private": true,
   "packageManager": "pnpm@11.22.0",
   "engines": {
-    "node": ">=20.9.0"
+    "node": ">=22.0.0"
   },
   "scripts": {
     "build": "turbo run build",
     "catalog:audit": "node scripts/audit-boofchi-source.mjs",
     "catalog:import": "node scripts/import-boofchi-demo.mjs",
     "catalog:validate": "node scripts/validate-demo-catalog.mjs",
+    "cf:build": "pnpm --filter @boofchi/web cf:build",
+    "cf:deploy": "pnpm --filter @boofchi/web cf:deploy",
+    "cf:preview": "pnpm --filter @boofchi/web cf:preview",
     "dev": "turbo run dev",
     "lint": "turbo run lint && eslint scripts",
     "type-check": "turbo run type-check",
