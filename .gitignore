@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Environment (the documented example remains tracked)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Next.js and Turborepo
+.next/
+out/
+.turbo/
+dist/
+
+# Test and tooling output
+coverage/
+*.tsbuildinfo
+
+# Logs
+*.log
+pnpm-debug.log*
+
+# Editors and operating systems
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+.DS_Store
+Thumbs.db
+Desktop.ini

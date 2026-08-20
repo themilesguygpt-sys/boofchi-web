@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import "@fontsource-variable/vazirmatn/wght.css";
+@import "@boofchi/design-tokens/css";
+
+@theme inline {
+  --color-background: var(--boofchi-color-background);
+  --color-surface: var(--boofchi-color-surface);
+  --color-surface-elevated: var(--boofchi-color-surface-elevated);
+  --color-primary: var(--boofchi-color-primary);
+  --color-primary-deep: var(--boofchi-color-primary-deep);
+  --color-primary-glow: var(--boofchi-color-primary-glow);
+  --color-signature: var(--boofchi-color-signature);
+  --color-text-primary: var(--boofchi-color-text-primary);
+  --color-text-secondary: var(--boofchi-color-text-secondary);
+  --color-border: var(--boofchi-color-border);
+  --font-sans: var(--boofchi-font-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--boofchi-color-background);
+  color: var(--boofchi-color-text-primary);
+  font-family: var(--boofchi-font-sans);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--boofchi-color-background);
+  font-size: var(--text-body);
+  line-height: 1.75;
+  text-rendering: optimizeLegibility;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--boofchi-color-primary-glow);
+  outline-offset: 4px;
+  box-shadow: var(--shadow-focus);
+}
+
+[data-bidi-isolate] {
+  unicode-bidi: isolate;
+}
+
+::selection {
+  background: var(--boofchi-color-primary);
+  color: var(--boofchi-color-text-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

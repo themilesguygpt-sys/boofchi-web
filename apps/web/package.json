@@ -1,0 +1,27 @@
+{
+  "name": "@boofchi/web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "eslint .",
+    "start": "next start",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@boofchi/contracts": "workspace:*",
+    "@boofchi/design-tokens": "workspace:*",
+    "@fontsource-variable/vazirmatn": "5.3.0",
+    "@tailwindcss/postcss": "4.3.3",
+    "next": "16.3.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwindcss": "4.3.3"
+  },
+  "devDependencies": {
+    "@boofchi/config": "workspace:*",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4"
+  }
+}
