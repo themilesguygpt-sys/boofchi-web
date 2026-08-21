@@ -252,6 +252,7 @@ const catalogMeta = {
 
 await Promise.all([
   writeJson("products.json", normalizedProducts),
+  writeJson("product-ids.json", normalizedProducts.map((product) => product.id)),
   writeJson("categories.json", categories),
   writeJson("universes.json", universes),
   writeJson("fandoms.json", emptyEntities),

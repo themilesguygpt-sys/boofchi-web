@@ -24,6 +24,7 @@ const fandoms = fandomsData as Fandom[];
 const characters = charactersData as Character[];
 const collections = collectionsData as Collection[];
 const productOrder = new Map(products.map((product, index) => [product.id, index]));
+const categoryById = new Map(categories.map((category) => [category.id, category]));
 const nameCollator = new Intl.Collator("fa", { sensitivity: "base" });
 
 function includesSearch(product: Product, search: string): boolean {
@@ -127,14 +128,31 @@ export const demoCatalogDataSource: CatalogDataSource = {
     const universeBase = filterProducts({ ...base, universeId: undefined });
     const availabilityBase = filterProducts({ ...base, availability: undefined });
 
+    const categoryCounts = new Map<string, number>();
+    for (const product of categoryBase) {
+      let category = categoryById.get(product.categoryId);
+      while (category) {
+        categoryCounts.set(category.id, (categoryCounts.get(category.id) ?? 0) + 1);
+        category = category.parentId ? categoryById.get(category.parentId) : undefined;
+      }
+    }
+    const universeCounts = new Map<string, number>();
+    for (const product of universeBase) {
+      if (product.universeId) {
+        universeCounts.set(
+          product.universeId,
+          (universeCounts.get(product.universeId) ?? 0) + 1,
+        );
+      }
+    }
+
     return {
       categories: categories.flatMap((category) => {
-        const ids = descendantCategoryIds(category.id);
-        const count = categoryBase.filter((product) => ids.has(product.categoryId)).length;
+        const count = categoryCounts.get(category.id) ?? 0;
         return count > 0 ? [{ category, count }] : [];
       }),
       universes: universes.flatMap((universe) => {
-        const count = universeBase.filter((product) => product.universeId === universe.id).length;
+        const count = universeCounts.get(universe.id) ?? 0;
         return count > 0 ? [{ universe, count }] : [];
       }),
       availability: (["in-stock", "out-of-stock", "unknown"] as const).flatMap(

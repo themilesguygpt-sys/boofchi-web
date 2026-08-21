@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import { CommerceProvider } from "@/components/commerce/commerce-provider";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import { demoCatalogDataSource } from "@/data/demo/catalog";
+import demoProductIds from "@/data/demo/product-ids.json";
 import { getSiteUrl } from "@/lib/site";
 
 import "./globals.css";
@@ -47,16 +47,14 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default async function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
-  const { items: products } = await demoCatalogDataSource.listProducts({ limit: 100 });
-
+export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="fa" dir="rtl">
       <body>
         <a className="skip-link" href="#main-content">
           رفتن به محتوای اصلی
         </a>
-        <CommerceProvider validProductIds={products.map((product) => product.id)}>
+        <CommerceProvider validProductIds={demoProductIds}>
           <SiteHeader />
           {children}
           <SiteFooter />

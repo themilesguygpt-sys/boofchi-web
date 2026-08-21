@@ -30,8 +30,9 @@ function validateMoney(money, label) {
   assert(money?.unit === "TOMAN", `${label} unit must be TOMAN.`);
 }
 
-const [products, categories, universes, fandoms, characters, collections, meta, manifest] = await Promise.all([
+const [products, productIds, categories, universes, fandoms, characters, collections, meta, manifest] = await Promise.all([
   readJson("products.json"),
+  readJson("product-ids.json"),
   readJson("categories.json"),
   readJson("universes.json"),
   readJson("fandoms.json"),
@@ -43,6 +44,10 @@ const [products, categories, universes, fandoms, characters, collections, meta, 
 
 assert(products.length === 96, `Expected 96 products, found ${products.length}.`);
 unique(products.map((product) => product.id), "Product IDs");
+assert(
+  JSON.stringify(productIds) === JSON.stringify(products.map((product) => product.id)),
+  "Product identity manifest must match the catalog order.",
+);
 unique(products.map((product) => product.slug), "Product slugs");
 unique(categories.map((category) => category.id), "Category IDs");
 unique(universes.map((universe) => universe.id), "Universe IDs");
