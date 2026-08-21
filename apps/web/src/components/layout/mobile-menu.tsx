@@ -4,14 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
+import { useCommerce } from "@/components/commerce/commerce-provider";
 import { CloseIcon, MenuIcon } from "@/components/ui/icons";
-
-const links = [
-  { href: "/shop", label: "همه محصولات" },
-  { href: "/#universes", label: "دنیاها" },
-  { href: "/#categories", label: "دسته‌بندی‌ها" },
-  { href: "/#story", label: "خودِ بوفچی" },
-] as const;
 
 const focusableSelector = [
   "a[href]",
@@ -23,10 +17,20 @@ const focusableSelector = [
 ].join(",");
 
 export function MobileMenu() {
+  const { hydrated, wishlistCount, cartCount } = useCommerce();
   const [open, setOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
+  const links = [
+    { href: "/shop", label: "همه محصولات" },
+    { href: "/search", label: "جستجو" },
+    { href: "/wishlist", label: `علاقه‌مندی‌ها${hydrated && wishlistCount ? ` (${wishlistCount.toLocaleString("fa-IR")})` : ""}` },
+    { href: "/cart", label: `سبد خرید${hydrated && cartCount ? ` (${cartCount.toLocaleString("fa-IR")})` : ""}` },
+    { href: "/#universes", label: "دنیاها" },
+    { href: "/#categories", label: "دسته‌بندی‌ها" },
+    { href: "/#story", label: "خودِ بوفچی" },
+  ];
 
   useEffect(() => {
     if (!open) return;
@@ -136,16 +140,14 @@ export function MobileMenu() {
                 {links.map((link, index) => (
                   <li key={link.href}>
                     <Link href={link.href} onClick={() => setOpen(false)}>
-                      <span dir="ltr">0{index + 1}</span>
+                      <span dir="ltr">{String(index + 1).padStart(2, "0")}</span>
                       {link.label}
                     </Link>
                   </li>
                 ))}
               </ul>
             </nav>
-            <p className="mobile-menu__note">
-              جست‌وجو، سبد خرید و پروفایل به‌زودی به بوفچی اضافه می‌شن.
-            </p>
+            <p className="mobile-menu__note">حساب کاربری در نسخه نهایی فعال می‌شه.</p>
           </div>
         </div>
       ) : null}

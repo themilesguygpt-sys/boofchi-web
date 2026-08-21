@@ -2,6 +2,8 @@ export type {
   AvailabilityFilterOption,
   AvailableProductFilters,
   CatalogDataSource,
+  CatalogSearchResult,
+  CatalogSearchService,
   Category,
   CategoryFilterOption,
   Character,

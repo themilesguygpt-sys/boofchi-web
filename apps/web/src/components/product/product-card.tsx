@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { BidiText } from "@/components/bidi-text";
+import { MixedTitleText } from "@/components/mixed-title-text";
+import { WishlistToggle } from "@/components/wishlist/wishlist-toggle";
 import { formatMoney } from "@/lib/format-money";
 
 interface ProductCardProps {
@@ -19,6 +21,7 @@ export function ProductCard({ product, universe }: ProductCardProps) {
 
   return (
     <article className="product-card">
+      <WishlistToggle productId={product.id} productTitle={product.title.fa} />
       <Link className="product-card__link" href={`/product/${product.slug}`}>
         <div className="product-card__media">
           {image ? (
@@ -43,7 +46,7 @@ export function ProductCard({ product, universe }: ProductCardProps) {
             <span>{product.availability === "in-stock" ? "موجود" : "ناموجود"}</span>
           </div>
           <h3>
-            <BidiText dir="auto">{product.title.fa}</BidiText>
+            <MixedTitleText>{product.title.fa}</MixedTitleText>
           </h3>
           <div className="product-card__price">
             {hasSale && product.regularPrice ? (

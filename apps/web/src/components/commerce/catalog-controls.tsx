@@ -11,6 +11,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { SortSelect } from "@/components/commerce/sort-select";
 import { CloseIcon } from "@/components/ui/icons";
+import { normalizeSearchText } from "@/lib/search-normalize";
 
 interface CatalogControlsProps {
   categories: readonly CategoryFilterOption[];
@@ -34,6 +35,7 @@ const availabilityLabels = {
 const focusableSelector = [
   "a[href]",
   "button:not([disabled])",
+  "input:not([disabled])",
   "select:not([disabled])",
   '[tabindex]:not([tabindex="-1"])',
 ].join(",");
@@ -61,12 +63,32 @@ function FilterPanel({
   current,
   onNavigate,
 }: Omit<CatalogControlsProps, "resultCount"> & { onNavigate?: () => void }) {
+  const [categoryQuery, setCategoryQuery] = useState("");
+  const normalizedCategoryQuery = normalizeSearchText(categoryQuery);
+  const visibleCategories = normalizedCategoryQuery
+    ? categories.filter(({ category }) =>
+        normalizeSearchText([category.name.fa, category.name.en].filter(Boolean).join(" "))
+          .includes(normalizedCategoryQuery),
+      )
+    : categories;
+
   return (
     <div className="filter-panel">
       <section className="filter-group" aria-labelledby="filter-category-title">
         <h2 id="filter-category-title">دسته‌بندی</h2>
-        <div className="filter-options filter-options--scroll">
-          {categories.map(({ category, count }) => {
+        <label className="filter-option-search">
+          <span>جستجو در دسته‌بندی‌ها</span>
+          <input
+            type="search"
+            dir="auto"
+            value={categoryQuery}
+            placeholder="اسم دسته‌بندی"
+            autoComplete="off"
+            onChange={(event) => setCategoryQuery(event.target.value)}
+          />
+        </label>
+        <div className="filter-options filter-options--scroll" aria-live="polite">
+          {visibleCategories.map(({ category, count }) => {
             const selected = current.categorySlug === category.slug;
             return (
               <Link
@@ -81,6 +103,9 @@ function FilterPanel({
               </Link>
             );
           })}
+          {!visibleCategories.length ? (
+            <p className="filter-options__empty">هیچ دسته‌ای با این عبارت پیدا نشد.</p>
+          ) : null}
         </div>
       </section>
 

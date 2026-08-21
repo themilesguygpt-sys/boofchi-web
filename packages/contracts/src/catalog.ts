@@ -121,6 +121,19 @@ export interface AvailableProductFilters {
   availability: readonly AvailabilityFilterOption[];
 }
 
+export interface CatalogSearchResult {
+  query: string;
+  items: readonly Product[];
+  total: number;
+}
+
+/**
+ * Search boundary for the local demo index today and a hosted search adapter later.
+ */
+export interface CatalogSearchService {
+  search(query: string, limit?: number): Promise<CatalogSearchResult>;
+}
+
 /**
  * Minimal boundary for demo data today and a Medusa REST adapter later.
  * UI code consumes this contract rather than a particular JSON payload.

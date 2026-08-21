@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { HeaderActions } from "@/components/layout/header-actions";
 import { MobileMenu } from "@/components/layout/mobile-menu";
-import { BagIcon, HeartIcon, SearchIcon, UserIcon } from "@/components/ui/icons";
 
 const navigation = [
   { href: "/shop", label: "همه محصولات" },
@@ -45,23 +45,7 @@ export function SiteHeader() {
           </ul>
         </nav>
 
-        <div className="header-actions" aria-label="ابزارهای فروشگاه">
-          <Link className="icon-button" href="/shop" aria-label="رفتن به محصولات">
-            <SearchIcon />
-          </Link>
-          <button className="icon-button desktop-only" type="button" disabled title="علاقه‌مندی‌ها؛ به‌زودی">
-            <span className="sr-only">علاقه‌مندی‌ها؛ به‌زودی</span>
-            <HeartIcon />
-          </button>
-          <button className="icon-button desktop-only" type="button" disabled title="سبد خرید؛ به‌زودی">
-            <span className="sr-only">سبد خرید؛ به‌زودی</span>
-            <BagIcon />
-          </button>
-          <button className="icon-button desktop-only" type="button" disabled title="حساب کاربری؛ به‌زودی">
-            <span className="sr-only">حساب کاربری؛ به‌زودی</span>
-            <UserIcon />
-          </button>
-        </div>
+        <HeaderActions />
       </div>
     </header>
   );

@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { BidiText } from "@/components/bidi-text";
 import { Breadcrumbs } from "@/components/commerce/breadcrumbs";
 import { ProductGrid } from "@/components/commerce/product-grid";
+import { MixedTitleText } from "@/components/mixed-title-text";
+import { ProductActions } from "@/components/product/product-actions";
 import { ProductGallery } from "@/components/product/product-gallery";
 import { Container } from "@/components/ui/container";
 import { demoCatalogDataSource } from "@/data/demo/catalog";
@@ -79,7 +81,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <ProductGallery images={product.images} productTitle={product.title.fa} />
           <div className="product-detail__info">
             <p className="product-detail__eyebrow" dir="ltr">BOOFCHI / PRODUCT</p>
-            <h1 id="product-title"><BidiText dir="auto">{product.title.fa}</BidiText></h1>
+            <h1 id="product-title"><MixedTitleText>{product.title.fa}</MixedTitleText></h1>
             <div className="product-detail__price">
               {hasSale && product.regularPrice ? (
                 <del><BidiText dir="rtl">{formatMoney(product.regularPrice)}</BidiText></del>
@@ -101,19 +103,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
               ) : null}
             </dl>
 
-            {product.availability === "in-stock" ? (
-              <div className="product-action">
-                <button type="button" className="button button--primary" disabled aria-describedby="cart-stage-note">
-                  افزودن به سبد
-                </button>
-                <p id="cart-stage-note">سبد خرید در مرحله بعد فعال می‌شه.</p>
-              </div>
-            ) : (
-              <div className="product-action product-action--unavailable" role="status">
-                <strong>فعلاً موجود نیست.</strong>
-                <p>محصولات مشابه رو پایین صفحه ببین.</p>
-              </div>
-            )}
+            <ProductActions
+              productId={product.id}
+              productTitle={product.title.fa}
+              availability={product.availability}
+            />
           </div>
         </section>
 

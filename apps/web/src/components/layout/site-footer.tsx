@@ -43,9 +43,10 @@ export function SiteFooter() {
             <Link href="/#collector">کالکشن تو</Link>
           </section>
           <section aria-labelledby="footer-next">
-            <h2 id="footer-next">در راه</h2>
-            <span>جست‌وجوی کامل</span>
-            <span>علاقه‌مندی و پروفایل</span>
+            <h2 id="footer-next">انتخاب‌های تو</h2>
+            <Link href="/search">جستجو</Link>
+            <Link href="/wishlist">علاقه‌مندی‌ها</Link>
+            <Link href="/cart">سبد خرید</Link>
           </section>
         </div>
 

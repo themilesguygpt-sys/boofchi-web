@@ -6,6 +6,7 @@
 @import "../styles/home.css";
 @import "../styles/product.css";
 @import "../styles/commerce.css";
+@import "../styles/interactions.css";
 
 @theme inline {
   --color-background: var(--boofchi-color-background);
