@@ -6,7 +6,6 @@ import type {
   ProductSort,
   UniverseFilterOption,
 } from "@boofchi/contracts";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 import { SortSelect } from "@/components/commerce/sort-select";
@@ -91,7 +90,7 @@ function FilterPanel({
           {visibleCategories.map(({ category, count }) => {
             const selected = current.categorySlug === category.slug;
             return (
-              <Link
+              <a
                 key={category.id}
                 href={filterHref(current, "category", category.slug)}
                 className={selected ? "is-selected" : undefined}
@@ -100,7 +99,7 @@ function FilterPanel({
               >
                 <bdi dir="auto">{category.name.fa}</bdi>
                 <span>{count.toLocaleString("fa-IR")}</span>
-              </Link>
+              </a>
             );
           })}
           {!visibleCategories.length ? (
@@ -115,7 +114,7 @@ function FilterPanel({
           {universes.map(({ universe, count }) => {
             const selected = current.universeSlug === universe.slug;
             return (
-              <Link
+              <a
                 key={universe.id}
                 href={filterHref(current, "universe", universe.slug)}
                 className={selected ? "is-selected" : undefined}
@@ -124,7 +123,7 @@ function FilterPanel({
               >
                 <bdi dir="ltr">{universe.name.en ?? universe.name.fa}</bdi>
                 <span>{count.toLocaleString("fa-IR")}</span>
-              </Link>
+              </a>
             );
           })}
         </div>
@@ -136,7 +135,7 @@ function FilterPanel({
           {availability.map((option) => {
             const selected = current.availability === option.availability;
             return (
-              <Link
+              <a
                 key={option.availability}
                 href={filterHref(current, "availability", option.availability)}
                 className={selected ? "is-selected" : undefined}
@@ -145,7 +144,7 @@ function FilterPanel({
               >
                 {availabilityLabels[option.availability]}
                 <span>{option.count.toLocaleString("fa-IR")}</span>
-              </Link>
+              </a>
             );
           })}
         </div>
@@ -208,7 +207,7 @@ export function CatalogControls(props: CatalogControlsProps) {
       <aside className="catalog-sidebar" aria-label="فیلتر محصولات">
         <div className="catalog-sidebar__top">
           <strong>فیلترها</strong>
-          {appliedCount ? <Link href="/shop">پاک کردن</Link> : null}
+          {appliedCount ? <a href="/shop">پاک کردن</a> : null}
         </div>
         <FilterPanel {...props} />
       </aside>
@@ -261,7 +260,7 @@ export function CatalogControls(props: CatalogControlsProps) {
             </div>
             <FilterPanel {...props} onNavigate={() => setOpen(false)} />
             <div className="filter-dialog__footer">
-              {appliedCount ? <Link href="/shop">پاک کردن فیلترها</Link> : <span />}
+              {appliedCount ? <a href="/shop">پاک کردن فیلترها</a> : <span />}
               <button type="button" className="button button--primary" onClick={() => setOpen(false)}>
                 دیدن {props.resultCount.toLocaleString("fa-IR")} محصول
               </button>

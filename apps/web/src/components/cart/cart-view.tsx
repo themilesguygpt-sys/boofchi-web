@@ -2,7 +2,6 @@
 
 import type { Money, Product } from "@boofchi/contracts";
 import Image from "next/image";
-import Link from "next/link";
 
 import { DEMO_MAX_QUANTITY, useCommerce } from "@/components/commerce/commerce-provider";
 import { MixedTitleText } from "@/components/mixed-title-text";
@@ -37,7 +36,7 @@ export function CartView({ products }: { products: readonly Product[] }) {
         <span dir="ltr">CART / EMPTY</span>
         <h2>سبدت خالیه.</h2>
         <p>یه دور توی محصولات بزن.</p>
-        <Link className="button button--primary" href="/shop">دیدن محصولات</Link>
+        <a className="button button--primary" href="/shop">دیدن محصولات</a>
       </div>
     );
   }
@@ -58,13 +57,13 @@ export function CartView({ products }: { products: readonly Product[] }) {
             };
             return (
               <li key={product.id} className="cart-line">
-                <Link className="cart-line__image" href={`/product/${product.slug}`}>
+                <a className="cart-line__image" href={`/product/${product.slug}`}>
                   {image ? <Image src={image.path} alt={image.alt || product.title.fa} fill sizes="8rem" /> : null}
-                </Link>
+                </a>
                 <div className="cart-line__details">
-                  <Link href={`/product/${product.slug}`}>
+                  <a href={`/product/${product.slug}`}>
                     <h3><MixedTitleText>{product.title.fa}</MixedTitleText></h3>
-                  </Link>
+                  </a>
                   <p className={product.availability === "in-stock" ? "is-available" : "is-unavailable"}>
                     {product.availability === "in-stock" ? "موجود" : "فعلاً ناموجود"}
                   </p>
@@ -106,7 +105,7 @@ export function CartView({ products }: { products: readonly Product[] }) {
         <div><span>جمع محصولات</span><strong><bdi dir="rtl">{formatMoney(subtotal)}</bdi></strong></div>
         <button type="button" className="button button--primary" disabled>تکمیل خرید</button>
         <p>پرداخت در نسخه نهایی فروشگاه فعال می‌شه.</p>
-        <Link href="/shop">ادامه خرید</Link>
+        <a href="/shop">ادامه خرید</a>
       </aside>
     </div>
   );

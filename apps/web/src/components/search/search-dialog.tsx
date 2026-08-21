@@ -2,8 +2,6 @@
 
 import type { Money, ProductAvailability } from "@boofchi/contracts";
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 import { MixedTitleText } from "@/components/mixed-title-text";
@@ -33,7 +31,6 @@ const focusableSelector = [
 ].join(",");
 
 export function SearchDialog() {
-  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState<SuggestionResponse | null>(null);
@@ -104,7 +101,9 @@ export function SearchDialog() {
   function navigateToSearch() {
     const trimmed = query.trim();
     if (!trimmed) return;
-    router.push(`/search?q=${encodeURIComponent(trimmed)}`);
+    // A document navigation avoids a costly RSC request on the demo Workers Free runtime.
+    // eslint-disable-next-line @next/next/no-location-assign-relative-destination
+    window.location.assign(`/search?q=${encodeURIComponent(trimmed)}`);
   }
 
   return (
@@ -224,7 +223,7 @@ export function SearchDialog() {
                   <ul className="search-suggestions">
                     {suggestions.items.map((item) => (
                       <li key={item.id}>
-                        <Link href={`/product/${item.slug}`} onClick={() => setOpen(false)}>
+                        <a href={`/product/${item.slug}`} onClick={() => setOpen(false)}>
                           <span className="search-suggestions__image">
                             {item.image ? (
                               <Image src={item.image.path} alt={item.image.alt} fill sizes="4.5rem" />
@@ -235,17 +234,17 @@ export function SearchDialog() {
                             <small>{item.availability === "in-stock" ? "موجود" : "ناموجود"}</small>
                           </span>
                           <bdi dir="rtl">{formatMoney(item.price)}</bdi>
-                        </Link>
+                        </a>
                       </li>
                     ))}
                   </ul>
-                  <Link
+                  <a
                     className="search-dialog__all"
                     href={`/search?q=${encodeURIComponent(query.trim())}`}
                     onClick={() => setOpen(false)}
                   >
                     دیدن همه {suggestions.total.toLocaleString("fa-IR")} نتیجه
-                  </Link>
+                  </a>
                 </>
               ) : null}
             </div>

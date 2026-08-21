@@ -24,7 +24,7 @@ export function SiteHeader() {
           <MobileMenu />
         </div>
 
-        <Link className="brand-mark" href="/" aria-label="صفحه اصلی بوفچی">
+        <Link className="brand-mark" href="/" prefetch={false} aria-label="صفحه اصلی بوفچی">
           <Image
             src="/media/brand/boofchi-logo.png"
             alt="بوفچی"
@@ -39,7 +39,11 @@ export function SiteHeader() {
           <ul>
             {navigation.map((item) => (
               <li key={item.href}>
-                <Link href={item.href}>{item.label}</Link>
+                {item.href === "/shop" ? (
+                  <a href={item.href}>{item.label}</a>
+                ) : (
+                  <Link href={item.href} prefetch={false}>{item.label}</Link>
+                )}
               </li>
             ))}
           </ul>

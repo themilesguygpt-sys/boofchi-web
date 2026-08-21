@@ -29,24 +29,24 @@ export function SiteFooter() {
         <div className="site-footer__grid">
           <section aria-labelledby="footer-shop">
             <h2 id="footer-shop">فروشگاه</h2>
-            <Link href="/shop">همه محصولات</Link>
-            <Link href="/shop?availability=in-stock">محصولات موجود</Link>
+            <a href="/shop">همه محصولات</a>
+            <a href="/shop?availability=in-stock">محصولات موجود</a>
           </section>
           <section aria-labelledby="footer-discovery">
             <h2 id="footer-discovery">کشف</h2>
-            <Link href="/#universes">دنیاها</Link>
-            <Link href="/#categories">دسته‌بندی‌ها</Link>
+            <Link href="/#universes" prefetch={false}>دنیاها</Link>
+            <Link href="/#categories" prefetch={false}>دسته‌بندی‌ها</Link>
           </section>
           <section aria-labelledby="footer-about">
             <h2 id="footer-about">بوفچی</h2>
-            <Link href="/#story">فضای بوفچی</Link>
-            <Link href="/#collector">کالکشن تو</Link>
+            <Link href="/#story" prefetch={false}>فضای بوفچی</Link>
+            <Link href="/#collector" prefetch={false}>کالکشن تو</Link>
           </section>
           <section aria-labelledby="footer-next">
             <h2 id="footer-next">انتخاب‌های تو</h2>
-            <Link href="/search">جستجو</Link>
-            <Link href="/wishlist">علاقه‌مندی‌ها</Link>
-            <Link href="/cart">سبد خرید</Link>
+            <a href="/search">جستجو</a>
+            <a href="/wishlist">علاقه‌مندی‌ها</a>
+            <a href="/cart">سبد خرید</a>
           </section>
         </div>
 

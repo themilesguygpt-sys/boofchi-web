@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import { BidiText } from "@/components/bidi-text";
 import { CategoryCard } from "@/components/home/category-card";
@@ -32,10 +31,10 @@ export default async function Home() {
               اتاقت.
             </p>
             <div className="hero__actions">
-              <Link className="button button--primary" href="/shop">
+              <a className="button button--primary" href="/shop">
                 دیدن محصولات
                 <ArrowIcon />
-              </Link>
+              </a>
               <a className="button button--ghost" href="#universes">
                 کشف دنیاها
               </a>
@@ -208,7 +207,7 @@ export default async function Home() {
         <Container className="closing-section__inner">
           <p dir="ltr">NOT ANOTHER ORDINARY STORE</p>
           <h2 id="closing-title">عادی انتخاب نکن.</h2>
-          <Link className="button button--primary" href="/shop">برگشتن به ویترین <ArrowIcon /></Link>
+          <a className="button button--primary" href="/shop">برگشتن به ویترین <ArrowIcon /></a>
         </Container>
       </section>
     </main>

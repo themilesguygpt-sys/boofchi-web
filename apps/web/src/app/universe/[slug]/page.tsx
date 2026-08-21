@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Breadcrumbs } from "@/components/commerce/breadcrumbs";
@@ -77,7 +76,7 @@ export default async function UniversePage({ params, searchParams }: UniversePag
         ) : (
           <div className="empty-state">
             <h2>فعلاً محصولی از این دنیا موجود نیست.</h2>
-            <Link className="button button--primary" href="/shop">دیدن همه محصولات</Link>
+            <a className="button button--primary" href="/shop">دیدن همه محصولات</a>
           </div>
         )}
       </Container>

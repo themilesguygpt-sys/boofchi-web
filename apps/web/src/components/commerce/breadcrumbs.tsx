@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface BreadcrumbItem {
   label: string;
   href?: string;
@@ -13,9 +11,9 @@ export function Breadcrumbs({ items }: { items: readonly BreadcrumbItem[] }) {
         {items.map((item, index) => (
           <li key={`${item.label}-${index}`}>
             {item.href ? (
-              <Link href={item.href}>
+              <a href={item.href}>
                 <bdi dir={item.dir ?? "auto"}>{item.label}</bdi>
-              </Link>
+              </a>
             ) : (
               <span aria-current="page">
                 <bdi dir={item.dir ?? "auto"}>{item.label}</bdi>

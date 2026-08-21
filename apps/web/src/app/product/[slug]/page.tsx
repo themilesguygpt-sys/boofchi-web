@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { BidiText } from "@/components/bidi-text";
@@ -96,10 +95,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
             <dl className="product-detail__meta">
               {category ? (
-                <div><dt>دسته‌بندی</dt><dd><Link href={`/category/${category.slug}`}><bdi dir="auto">{category.name.fa}</bdi></Link></dd></div>
+                <div><dt>دسته‌بندی</dt><dd><a href={`/category/${category.slug}`}><bdi dir="auto">{category.name.fa}</bdi></a></dd></div>
               ) : null}
               {universe ? (
-                <div><dt>دنیا</dt><dd><Link href={`/universe/${universe.slug}`}><bdi dir="ltr">{universe.name.en ?? universe.name.fa}</bdi></Link></dd></div>
+                <div><dt>دنیا</dt><dd><a href={`/universe/${universe.slug}`}><bdi dir="ltr">{universe.name.en ?? universe.name.fa}</bdi></a></dd></div>
               ) : null}
             </dl>
 
@@ -121,7 +120,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <section className="related-products" aria-labelledby="related-title">
             <div className="related-products__heading">
               <div><p className="eyebrow">ادامه بده</p><h2 id="related-title">محصولات مرتبط</h2></div>
-              <Link href="/shop">دیدن همه محصولات</Link>
+              <a href="/shop">دیدن همه محصولات</a>
             </div>
             <ProductGrid products={relatedProducts} universes={universes} />
           </section>

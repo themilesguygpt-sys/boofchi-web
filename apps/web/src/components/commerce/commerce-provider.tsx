@@ -1,14 +1,8 @@
 "use client";
 
-import {
-  createContext,
-  type ReactNode,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-} from "react";
+import { useEffect, useMemo, useSyncExternalStore } from "react";
+
+import demoProductIds from "@/data/demo/product-ids.json";
 
 const STORAGE_KEY = "boofchi:v1:commerce";
 const SCHEMA_VERSION = 1;
@@ -24,12 +18,18 @@ interface CommerceState {
   cartLines: CartLineState[];
 }
 
+interface CommerceSnapshot extends CommerceState {
+  hydrated: boolean;
+  feedback: string;
+}
+
 interface PersistedCommerceState extends CommerceState {
   version: typeof SCHEMA_VERSION;
 }
 
 interface CommerceContextValue extends CommerceState {
   hydrated: boolean;
+  feedback: string;
   wishlistCount: number;
   cartCount: number;
   isWishlisted(productId: string): boolean;
@@ -41,10 +41,15 @@ interface CommerceContextValue extends CommerceState {
   clearCart(): void;
 }
 
+const validProductIds = new Set<string>(demoProductIds);
 const emptyState: CommerceState = { wishlistProductIds: [], cartLines: [] };
-const CommerceContext = createContext<CommerceContextValue | null>(null);
+const serverSnapshot: CommerceSnapshot = { ...emptyState, hydrated: false, feedback: "" };
+const listeners = new Set<() => void>();
+let snapshot = serverSnapshot;
+let initialized = false;
+let feedbackTimeout: number | undefined;
 
-function cleanState(value: unknown, validProductIds: ReadonlySet<string>): CommerceState {
+function cleanState(value: unknown): CommerceState {
   if (!value || typeof value !== "object") return emptyState;
   const candidate = value as Partial<PersistedCommerceState>;
   if (candidate.version !== SCHEMA_VERSION) return emptyState;
@@ -75,151 +80,156 @@ function cleanState(value: unknown, validProductIds: ReadonlySet<string>): Comme
   };
 }
 
-export function CommerceProvider({
-  validProductIds,
-  children,
-}: {
-  validProductIds: readonly string[];
-  children: ReactNode;
-}) {
-  const validIds = useMemo(() => new Set(validProductIds), [validProductIds]);
-  const [state, setState] = useState<CommerceState>(emptyState);
-  const [hydrated, setHydrated] = useState(false);
-  const [feedback, setFeedback] = useState("");
+function notify() {
+  listeners.forEach((listener) => listener());
+}
 
-  const announce = useCallback((message: string) => {
-    setFeedback("");
-    window.setTimeout(() => setFeedback(message), 0);
-  }, []);
+function persist(state: CommerceState) {
+  const persisted: PersistedCommerceState = { version: SCHEMA_VERSION, ...state };
+  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(persisted));
+}
 
-  useEffect(() => {
-    const timeout = window.setTimeout(() => {
-      try {
-        const raw = window.localStorage.getItem(STORAGE_KEY);
-        setState(raw ? cleanState(JSON.parse(raw), validIds) : emptyState);
-      } catch {
-        window.localStorage.removeItem(STORAGE_KEY);
-        setState(emptyState);
-      } finally {
-        setHydrated(true);
-      }
-    }, 0);
-    return () => window.clearTimeout(timeout);
-  }, [validIds]);
+function replaceState(state: CommerceState, shouldPersist: boolean) {
+  snapshot = { ...state, hydrated: true, feedback: "" };
+  if (shouldPersist) persist(state);
+  notify();
+}
 
-  useEffect(() => {
-    if (!hydrated) return;
-    const persisted: PersistedCommerceState = { version: SCHEMA_VERSION, ...state };
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(persisted));
-  }, [hydrated, state]);
+function initialize() {
+  if (initialized || typeof window === "undefined") return;
+  initialized = true;
 
-  useEffect(() => {
-    function onStorage(event: StorageEvent) {
-      if (event.key !== STORAGE_KEY) return;
-      try {
-        setState(event.newValue ? cleanState(JSON.parse(event.newValue), validIds) : emptyState);
-      } catch {
-        setState(emptyState);
-      }
+  try {
+    const raw = window.localStorage.getItem(STORAGE_KEY);
+    replaceState(raw ? cleanState(JSON.parse(raw)) : emptyState, true);
+  } catch {
+    window.localStorage.removeItem(STORAGE_KEY);
+    replaceState(emptyState, true);
+  }
+
+  window.addEventListener("storage", (event) => {
+    if (event.key !== STORAGE_KEY) return;
+    try {
+      replaceState(event.newValue ? cleanState(JSON.parse(event.newValue)) : emptyState, false);
+    } catch {
+      replaceState(emptyState, false);
     }
-    window.addEventListener("storage", onStorage);
-    return () => window.removeEventListener("storage", onStorage);
-  }, [validIds]);
+  });
+}
 
-  const toggleWishlist = useCallback((productId: string) => {
-    if (!validIds.has(productId)) return;
-    const exists = state.wishlistProductIds.includes(productId);
-    setState((current) => {
-      return {
-        ...current,
-        wishlistProductIds: exists
-          ? current.wishlistProductIds.filter((id) => id !== productId)
-          : [...current.wishlistProductIds, productId],
-      };
-    });
-    announce(exists ? "از علاقه‌مندی‌ها حذف شد." : "ذخیره شد.");
-  }, [announce, state.wishlistProductIds, validIds]);
+function announce(message: string) {
+  if (feedbackTimeout) window.clearTimeout(feedbackTimeout);
+  snapshot = { ...snapshot, feedback: "" };
+  notify();
+  feedbackTimeout = window.setTimeout(() => {
+    snapshot = { ...snapshot, feedback: message };
+    notify();
+  }, 0);
+}
 
-  const addToCart = useCallback((productId: string) => {
-    if (!validIds.has(productId)) return;
-    setState((current) => {
-      const existing = current.cartLines.find((line) => line.productId === productId);
-      const cartLines = existing
-        ? current.cartLines.map((line) =>
-            line.productId === productId
-              ? { ...line, quantity: Math.min(line.quantity + 1, DEMO_MAX_QUANTITY) }
-              : line,
-          )
-        : [...current.cartLines, { productId, quantity: 1 }];
-      return { ...current, cartLines };
-    });
-    announce("به سبد اضافه شد.");
-  }, [announce, validIds]);
+function updateState(updater: (current: CommerceState) => CommerceState, message?: string) {
+  initialize();
+  const next = updater(snapshot);
+  snapshot = { ...next, hydrated: true, feedback: "" };
+  persist(next);
+  notify();
+  if (message) announce(message);
+}
 
-  const removeFromCart = useCallback((productId: string) => {
-    setState((current) => ({
-      ...current,
-      cartLines: current.cartLines.filter((line) => line.productId !== productId),
-    }));
-    announce("از سبد حذف شد.");
-  }, [announce]);
+function toggleWishlist(productId: string) {
+  if (!validProductIds.has(productId)) return;
+  initialize();
+  const exists = snapshot.wishlistProductIds.includes(productId);
+  updateState((current) => ({
+    ...current,
+    wishlistProductIds: exists
+      ? current.wishlistProductIds.filter((id) => id !== productId)
+      : [...current.wishlistProductIds, productId],
+  }), exists ? "از علاقه‌مندی‌ها حذف شد." : "ذخیره شد.");
+}
 
-  const setQuantity = useCallback((productId: string, quantity: number) => {
-    if (!Number.isSafeInteger(quantity)) return;
-    if (quantity < 1) {
-      removeFromCart(productId);
-      return;
-    }
-    setState((current) => ({
-      ...current,
-      cartLines: current.cartLines.map((line) =>
-        line.productId === productId
-          ? { ...line, quantity: Math.min(quantity, DEMO_MAX_QUANTITY) }
-          : line,
-      ),
-    }));
-  }, [removeFromCart]);
+function addToCart(productId: string) {
+  if (!validProductIds.has(productId)) return;
+  updateState((current) => {
+    const existing = current.cartLines.find((line) => line.productId === productId);
+    const cartLines = existing
+      ? current.cartLines.map((line) =>
+          line.productId === productId
+            ? { ...line, quantity: Math.min(line.quantity + 1, DEMO_MAX_QUANTITY) }
+            : line,
+        )
+      : [...current.cartLines, { productId, quantity: 1 }];
+    return { ...current, cartLines };
+  }, "به سبد اضافه شد.");
+}
 
-  const clearCart = useCallback(() => {
-    setState((current) => ({ ...current, cartLines: [] }));
-    announce("سبد خالی شد.");
-  }, [announce]);
+function removeFromCart(productId: string) {
+  updateState((current) => ({
+    ...current,
+    cartLines: current.cartLines.filter((line) => line.productId !== productId),
+  }), "از سبد حذف شد.");
+}
 
-  const value = useMemo<CommerceContextValue>(() => ({
-    ...state,
-    hydrated,
-    wishlistCount: state.wishlistProductIds.length,
-    cartCount: state.cartLines.reduce((total, line) => total + line.quantity, 0),
-    isWishlisted: (productId) => state.wishlistProductIds.includes(productId),
-    cartQuantity: (productId) =>
-      state.cartLines.find((line) => line.productId === productId)?.quantity ?? 0,
-    toggleWishlist,
-    addToCart,
-    removeFromCart,
-    setQuantity,
-    clearCart,
-  }), [
-    addToCart,
-    clearCart,
-    hydrated,
-    removeFromCart,
-    setQuantity,
-    state,
-    toggleWishlist,
-  ]);
+function setQuantity(productId: string, quantity: number) {
+  if (!Number.isSafeInteger(quantity)) return;
+  if (quantity < 1) {
+    removeFromCart(productId);
+    return;
+  }
+  updateState((current) => ({
+    ...current,
+    cartLines: current.cartLines.map((line) =>
+      line.productId === productId
+        ? { ...line, quantity: Math.min(quantity, DEMO_MAX_QUANTITY) }
+        : line,
+    ),
+  }));
+}
 
-  return (
-    <CommerceContext.Provider value={value}>
-      {children}
-      <div className="commerce-live-region" aria-live="polite" aria-atomic="true">
-        {feedback}
-      </div>
-    </CommerceContext.Provider>
-  );
+function clearCart() {
+  updateState((current) => ({ ...current, cartLines: [] }), "سبد خالی شد.");
+}
+
+function subscribe(listener: () => void) {
+  listeners.add(listener);
+  return () => listeners.delete(listener);
+}
+
+function getSnapshot() {
+  return snapshot;
+}
+
+function getServerSnapshot() {
+  return serverSnapshot;
 }
 
 export function useCommerce(): CommerceContextValue {
-  const value = useContext(CommerceContext);
-  if (!value) throw new Error("useCommerce must be used within CommerceProvider");
-  return value;
+  const current = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+
+  useEffect(() => {
+    initialize();
+  }, []);
+
+  return useMemo(() => ({
+    ...current,
+    wishlistCount: current.wishlistProductIds.length,
+    cartCount: current.cartLines.reduce((total, line) => total + line.quantity, 0),
+    isWishlisted: (productId) => current.wishlistProductIds.includes(productId),
+    cartQuantity: (productId) =>
+      current.cartLines.find((line) => line.productId === productId)?.quantity ?? 0,
+    toggleWishlist,
+    addToCart,
+    removeFromCart,
+    setQuantity,
+    clearCart,
+  }), [current]);
+}
+
+export function CommerceLiveRegion() {
+  const { feedback } = useCommerce();
+  return (
+    <div className="commerce-live-region" aria-live="polite" aria-atomic="true">
+      {feedback}
+    </div>
+  );
 }

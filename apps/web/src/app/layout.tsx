@@ -1,10 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 
-import { CommerceProvider } from "@/components/commerce/commerce-provider";
+import { CommerceLiveRegion } from "@/components/commerce/commerce-provider";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import demoProductIds from "@/data/demo/product-ids.json";
 import { getSiteUrl } from "@/lib/site";
 
 import "./globals.css";
@@ -54,11 +53,10 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         <a className="skip-link" href="#main-content">
           رفتن به محتوای اصلی
         </a>
-        <CommerceProvider validProductIds={demoProductIds}>
-          <SiteHeader />
-          {children}
-          <SiteFooter />
-        </CommerceProvider>
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+        <CommerceLiveRegion />
       </body>
     </html>
   );

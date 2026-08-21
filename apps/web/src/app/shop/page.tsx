@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import { CatalogControls } from "@/components/commerce/catalog-controls";
 import { Breadcrumbs } from "@/components/commerce/breadcrumbs";
@@ -75,9 +74,9 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
                 <span dir="ltr">NO MATCH</span>
                 <h2>چیزی با این فیلترها پیدا نشد.</h2>
                 <p>فیلترها رو پاک کن و دوباره ببین.</p>
-                <Link className="button button--primary" href="/shop">
+                <a className="button button--primary" href="/shop">
                   پاک کردن فیلترها
-                </Link>
+                </a>
               </div>
             )}
           </section>

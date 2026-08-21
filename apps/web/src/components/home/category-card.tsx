@@ -1,6 +1,5 @@
 import type { Category, Product } from "@boofchi/contracts";
 import Image from "next/image";
-import Link from "next/link";
 
 import { BidiText } from "@/components/bidi-text";
 import { ArrowIcon } from "@/components/ui/icons";
@@ -15,7 +14,7 @@ export function CategoryCard({ category, product, index }: CategoryCardProps) {
   const image = product.images.find((item) => item.primary) ?? product.images[0];
 
   return (
-    <Link className="category-card" href={`/category/${category.slug}`} aria-label={`دیدن ${category.name.fa}`}>
+    <a className="category-card" href={`/category/${category.slug}`} aria-label={`دیدن ${category.name.fa}`}>
       <span className="category-card__number" dir="ltr">
         {String(index + 1).padStart(2, "0")}
       </span>
@@ -35,6 +34,6 @@ export function CategoryCard({ category, product, index }: CategoryCardProps) {
         </span>
         <ArrowIcon />
       </div>
-    </Link>
+    </a>
   );
 }

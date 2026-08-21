@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Breadcrumbs } from "@/components/commerce/breadcrumbs";
@@ -74,7 +73,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
         ) : (
           <div className="empty-state">
             <h2>فعلاً محصولی توی این دسته نیست.</h2>
-            <Link className="button button--primary" href="/shop">دیدن همه محصولات</Link>
+            <a className="button button--primary" href="/shop">دیدن همه محصولات</a>
           </div>
         )}
       </Container>

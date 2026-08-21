@@ -1,6 +1,5 @@
 import type { Product, Universe } from "@boofchi/contracts";
 import Image from "next/image";
-import Link from "next/link";
 
 import { BidiText } from "@/components/bidi-text";
 import { MixedTitleText } from "@/components/mixed-title-text";
@@ -22,7 +21,7 @@ export function ProductCard({ product, universe }: ProductCardProps) {
   return (
     <article className="product-card">
       <WishlistToggle productId={product.id} productTitle={product.title.fa} />
-      <Link className="product-card__link" href={`/product/${product.slug}`}>
+      <a className="product-card__link" href={`/product/${product.slug}`}>
         <div className="product-card__media">
           {image ? (
             <Image
@@ -63,7 +62,7 @@ export function ProductCard({ product, universe }: ProductCardProps) {
             )}
           </div>
         </div>
-      </Link>
+      </a>
     </article>
   );
 }

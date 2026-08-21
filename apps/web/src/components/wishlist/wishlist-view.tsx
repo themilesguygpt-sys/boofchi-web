@@ -1,7 +1,6 @@
 "use client";
 
 import type { Product, Universe } from "@boofchi/contracts";
-import Link from "next/link";
 
 import { useCommerce } from "@/components/commerce/commerce-provider";
 import { ProductGrid } from "@/components/commerce/product-grid";
@@ -27,7 +26,7 @@ export function WishlistView({
         <span dir="ltr">WISHLIST / EMPTY</span>
         <h2>هنوز چیزی ذخیره نکردی.</h2>
         <p>هر چیزی رو خواستی، با قلب روی کارت نگهش دار.</p>
-        <Link className="button button--primary" href="/shop">دیدن محصولات</Link>
+        <a className="button button--primary" href="/shop">دیدن محصولات</a>
       </div>
     );
   }

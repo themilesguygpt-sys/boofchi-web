@@ -1,7 +1,6 @@
 "use client";
 
 import type { ProductAvailability } from "@boofchi/contracts";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import { useCommerce } from "@/components/commerce/commerce-provider";
@@ -71,7 +70,7 @@ export function ProductActions({
       {quantity ? (
         <p className="product-action__status">
           <span>{quantity.toLocaleString("fa-IR")} عدد توی سبدته.</span>
-          <Link href="/cart">دیدن سبد</Link>
+          <a href="/cart">دیدن سبد</a>
         </p>
       ) : null}
     </div>

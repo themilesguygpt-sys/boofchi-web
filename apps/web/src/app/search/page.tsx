@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import { Breadcrumbs } from "@/components/commerce/breadcrumbs";
 import { ProductGrid } from "@/components/commerce/product-grid";
@@ -61,7 +60,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Searc
                 <span dir="ltr">NO MATCH</span>
                 <h2>چیزی برای <bdi dir="auto">«{query}»</bdi> پیدا نشد.</h2>
                 <p>املای عبارت رو چک کن یا یه چیز دیگه امتحان کن.</p>
-                <Link className="button button--secondary" href="/shop">دیدن محصولات</Link>
+                <a className="button button--secondary" href="/shop">دیدن محصولات</a>
               </div>
             )}
           </section>

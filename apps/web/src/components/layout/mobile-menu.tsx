@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 import { useCommerce } from "@/components/commerce/commerce-provider";
@@ -139,10 +138,10 @@ export function MobileMenu() {
               <ul className="mobile-menu__links">
                 {links.map((link, index) => (
                   <li key={link.href}>
-                    <Link href={link.href} onClick={() => setOpen(false)}>
+                    <a href={link.href} onClick={() => setOpen(false)}>
                       <span dir="ltr">{String(index + 1).padStart(2, "0")}</span>
                       {link.label}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
